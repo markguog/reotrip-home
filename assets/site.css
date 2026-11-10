@@ -1,0 +1,171 @@
+:root {
+  color-scheme: light;
+  --ink: #161a1d;
+  --paper: #f6f7f2;
+  --accent: #e6362e;
+  --line: #c9ccc2;
+  --muted: #606762;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--paper);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, transparent 0 49.8%, rgba(22, 26, 29, 0.045) 49.8% 50.2%, transparent 50.2%),
+    var(--paper);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 78px;
+  padding: 0 5vw;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+nav a {
+  padding: 0.5rem 0;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+main {
+  width: min(1120px, 90vw);
+  margin: 0 auto;
+}
+
+.intro {
+  display: grid;
+  align-content: end;
+  min-height: 62vh;
+  padding: 8rem 0 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.intro.compact {
+  min-height: 70vh;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 0.9;
+  font-weight: 850;
+}
+
+.lede {
+  max-width: 760px;
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.25rem, 2.6vw, 2.15rem);
+  line-height: 1.35;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 3rem 0 5rem;
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.contact-list {
+  display: grid;
+  gap: 0.8rem;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.contact-list a,
+.home-link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5vw;
+  color: var(--muted);
+  background: var(--ink);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    min-height: 66px;
+  }
+
+  .intro {
+    min-height: 56vh;
+    padding: 6rem 0 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-list a {
+    overflow-wrap: anywhere;
+  }
+}
