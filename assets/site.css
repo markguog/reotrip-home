@@ -147,6 +147,56 @@ footer {
   text-transform: uppercase;
 }
 
+.legal-main {
+  width: min(860px, 90vw);
+  padding: 5rem 0 7rem;
+}
+
+.legal-document h1 {
+  max-width: none;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 0.95;
+}
+
+.legal-document h2 {
+  margin: 3.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.legal-document p,
+.legal-document li {
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.legal-document p {
+  margin: 0.8rem 0;
+}
+
+.legal-document ol,
+.legal-document ul {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.legal-document > ol {
+  columns: 2;
+  column-gap: 3rem;
+  margin: 2rem 0 3rem;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  border: 1px solid var(--line);
+}
+
+.legal-document > ol li {
+  break-inside: avoid;
+  margin: 0.4rem 0;
+}
+
 @media (max-width: 640px) {
   .site-header {
     min-height: 66px;
@@ -167,5 +217,21 @@ footer {
 
   .contact-list a {
     overflow-wrap: anywhere;
+  }
+
+  .legal-main {
+    padding: 3.5rem 0 5rem;
+  }
+
+  .legal-document h1 {
+    font-size: 3rem;
+  }
+
+  .legal-document h2 {
+    font-size: 1.45rem;
+  }
+
+  .legal-document > ol {
+    columns: 1;
   }
 }
