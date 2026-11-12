@@ -112,6 +112,51 @@ h1 {
   line-height: 1.35;
 }
 
+.home-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: calc(100svh - 78px);
+  overflow: hidden;
+  color: #fff;
+  background: #121416;
+}
+
+.home-hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.home-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 14, 16, 0.28) 0%, rgba(12, 14, 16, 0.12) 38%, rgba(12, 14, 16, 0.82) 100%);
+}
+
+.home-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 90vw);
+  margin: 0 auto;
+  padding: 4rem 0 3.5rem;
+}
+
+.home-hero h1 {
+  color: #fff;
+}
+
+.home-hero .lede {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -233,14 +278,44 @@ footer a {
   text-transform: uppercase;
 }
 
+/* Every card in the HTML is shown. Under four cards, desktop uses two large columns. */
+.shop-grid {
+  column-count: 1;
+  column-gap: 1.25rem;
+}
+
 .shop-card {
-  display: grid;
-  gap: 0.45rem;
-  max-width: 540px;
-  padding: 1.5rem;
+  display: block;
+  break-inside: avoid;
+  margin: 0 0 1.25rem;
+  overflow: hidden;
   border: 1px solid var(--line);
   background: #fff;
   text-decoration: none;
+}
+
+.shop-card-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 28%;
+  background: #d9dbd4;
+}
+
+.shop-card:nth-child(3n + 2) .shop-card-photo {
+  aspect-ratio: 5 / 4;
+}
+
+.shop-card:nth-child(3n) .shop-card-photo {
+  aspect-ratio: 1 / 1;
+}
+
+.shop-card-body {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1.1rem 1.15rem 1.25rem;
 }
 
 .shop-card:hover,
@@ -419,9 +494,41 @@ footer a {
   display: none !important;
 }
 
+@media (min-width: 700px) {
+  .shop-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  .shop-grid {
+    column-count: 3;
+  }
+
+  .shop-grid:not(:has(> .shop-card:nth-child(4))) {
+    column-count: 2;
+  }
+
+  .shop-grid:not(:has(> .shop-card:nth-child(2))) {
+    column-count: 1;
+  }
+
+  .shop-grid:not(:has(> .shop-card:nth-child(2))) .shop-card-photo {
+    aspect-ratio: 16 / 9;
+  }
+
+  .shop-grid:has(> .shop-card:nth-child(3):last-child) > .shop-card:last-child {
+    column-span: all;
+  }
+}
+
 @media (max-width: 640px) {
   .site-header {
     min-height: 66px;
+  }
+
+  .home-hero {
+    min-height: calc(100svh - 66px);
   }
 
   .intro {
