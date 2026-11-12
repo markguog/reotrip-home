@@ -12,6 +12,11 @@ These files are the photographs shipped on the homepage. Neither license require
 | shanghai-yu-garden-800.jpg | 800×1200 | 117689 | https://www.pexels.com/photo/building-at-yu-yuan-gardens-in-shanghai-18332508/ | TonyNojmanSK | Pexels License | 2026-11-12T10:06:37Z | 1b6e40a85247709a7ba17a930c58d1ec545c34bf20840e94d4b31aaba6f6a607 |
 | tokyo-keio-800.jpg | 800×593 | 116038 | https://www.pexels.com/photo/aerial-view-of-train-tracks-in-tokyo-s-kita-ward-32150481/ | Gu Ko | Pexels License | 2026-11-12T10:06:39Z | fdb0f55f19c07007b027318de12cfdeab1b1aa9825effa7a266e3c7582bd7a28 |
 | kyoto-tower-800.jpg | 800×1066 | 93697 | https://www.pexels.com/photo/iconic-kyoto-tower-under-clear-blue-sky-37606029/ | Tanvir Araf | Pexels License | 2026-11-12T10:06:37Z | 75718923f7f57cc0d20ef67dfbaa155208378c93e687de4a7a40207d28e78aba |
+| seoul-tower-800.jpg | 800×600 | 70340 | https://www.pexels.com/photo/lotte-world-tower-glowing-against-blue-sky-33092357/ | Ilya B | Pexels License | 2026-11-12T09:59:02Z | 0a31833c788e9ca43d198c28f8b797c4775e4b1dec543dc3186af1b609477b15 |
+| seoul-han-800.jpg | 800×533 | 71666 | https://www.pexels.com/photo/modern-seoul-skyline-with-reflective-river-view-38043604/ | Rüveyda Akkaya | Pexels License | 2026-11-12T10:09:36Z | 57f7aaf7ee8b7f42013914e16daf305ef6bb05ddce512ad64e7b3f7e311d622c |
+| aberdeen-harbour-800.jpg | 800×600 | 114638 | https://www.pexels.com/photo/scenic-view-of-aberdeen-harbour-with-skyscrapers-38318492/ | PREETYGUYFABIO678 | Pexels License | 2026-11-12T10:09:36Z | 6e0db460316fcefd99303a6a6a964810359eba446a4a78e34d686b491b60ff0c |
+| hk-harbour-800.jpg | 800×413 | 81213 | https://www.pexels.com/photo/hong-kong-victoria-harbour-skyline-view-35262294/ | Kirandeep Singh Walia | Pexels License | 2026-11-12T09:59:57Z | 7d15f630b3f9a94330707e09eaf68e3838d213b235621e39a18b0a6e441771ae |
+| hcmc-landmark81-800.jpg | 800×1200 | 119049 | https://www.pexels.com/photo/landmark-81-in-ho-chi-minh-16551415/ | Phi Long | Pexels License | 2026-11-12T10:46:20Z | 5300aaa64365baf1580ad822c11d819bc51a8f0d5e940ae5859b899b5c643c50 |
 
 License text read on the source pages:
 
@@ -23,6 +28,11 @@ Originals, not shipped:
 - hero-original.jpg sha256 a2f0e512ba86a2b25834d1ec465c3a8d872b80dd2d9bef11f81472b32b95b00c, 7952×5304.
 - osaka-original.jpg sha256 c4c1de5120771b044a147dbc248f6856287d0fff4fa71aac3d9dadf3af1e52c0, 5712×4284.
 - macau-original.jpg sha256 2f10bf238abaf5f9a4706643e3297e6c950f91799987bbc8563a05e5a012784a, 5712×4284.
+- seoul-tower-original.jpg sha256 6d36e7f1fd93443da1619dba37cf493154c6917d38095ec905f5f1d872b631c5, 5464×7280, 1676572 bytes.
+- seoul-han-original.jpg sha256 d4f6bf1aa99e760bd512b6004936c8b48c26a0410a8ee574b0d0c7720bb122a6, 3840×2560, 1316468 bytes.
+- aberdeen-harbour-original.jpg sha256 57a083d5b96ba174950c4992a1c98c954e09c4fa9bee5abd7bb28d85db94283c, 4032×3024, 1775139 bytes.
+- hk-harbour-original.jpg sha256 cc6e3b94857ffd959ff8bace2f79f7e278f8a9b3919015e38d409d9a246cd75b, 5425×3617, 1941493 bytes.
+- hcmc-landmark81-original.jpg sha256 3a49d3d4093979d84b406fe5fd40425632f103735d1bf91b8f8b7659d0a4942a, 4672×7008, 2801326 bytes.
 
 What the pictures show: a dusk skyline of Minato, Tokyo; Abeno Harukas from Keitakuen in Osaka; Senado Square in Macau, with the wave-patterned pavement and the old civic buildings. No exhibit, no face close-up, no sign close-up. Macau Tower is not in the Macau card.
 
@@ -32,3 +42,14 @@ Added 2026-11-12 for four more cards. The license page was read again the same d
 - shanghai-yu-garden-800.jpg is a pavilion and rockery at Yu Garden in Shanghai (page title and location: Yu Yuan Gardens, Shanghai).
 - tokyo-keio-800.jpg is commuter-rail tracks and a flat-front train in Tokyo's Kita ward (page location: Kita, Tokyo). It is a Tokyo railway scene. It is not a Shinkansen, Tokyo Tower, Skytree, or the Mt. Takao cable car or chair lift.
 - kyoto-tower-800.jpg is the daytime exterior of Kyoto Tower (page location: Kyoto). The tower is the subject. The building name on the podium is part of that exterior.
+
+Added 2026-11-12 for four more cards. The license page was read again the same day. It still says "All photos and videos on Pexels are free to use. Attribution is not required." and that the pictures may be used on a website. Each new photo page labels the picture "Free" and links to that license.
+
+- seoul-tower-800.jpg is the glass exterior of Lotte World Tower in Seoul, seen from below against a clear sky (page title: Lotte World Tower). It is that tower's exterior. No face, no ride name, no mascot.
+- seoul-han-800.jpg is the Seoul skyline across the Han River (page location: Seoul). Lotte World Tower is not in the frame. Two birds are distant. No face close-up, no mascot, no ride name.
+- aberdeen-harbour-800.jpg is Aberdeen Harbour in Hong Kong, with boats in the foreground and residential towers behind (page title: Aberdeen Harbour). It is the harbour beside Ocean Park. It is not Victoria Harbour, not the Peak Tram, and not a park mascot or logo. Boat names are part of the harbour scene.
+- hk-harbour-800.jpg is a wide Hong Kong skyline across Victoria Harbour (page title: Hong Kong Victoria Harbour skyline). It is a cityscape. It is not a wax figure, not a celebrity, not a venue logo, not the Peak Tram, and not a close-up of the Peak Tower sign.
+
+Added 2026-11-12 for the Landmark 81 card. The Pexels license page was read again the same day. The photo page labels the picture "Free", names Phi Long, and lists 4672×7008. The page title is "Landmark 81 in Ho Chi Minh".
+
+- hcmc-landmark81-800.jpg is the Landmark 81 tower exterior at night in Ho Chi Minh City, seen across the river, with neighboring residential towers. It is that building. It is not Bitexco Financial Tower, not a palace, not a museum, not a show, not a mascot, not a logo, and not a face close-up. Boats at the river edge are distant.
