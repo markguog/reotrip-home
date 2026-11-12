@@ -339,7 +339,9 @@ footer a {
   background: #e5eaf0;
 }
 
-[data-shop-card="harukas300"] .shop-card-photo {
+[data-shop-card="harukas300"] .shop-card-photo,
+[data-shop-card="yugardenmorning"] .shop-card-photo,
+[data-shop-card="kyototower"] .shop-card-photo {
   object-position: 50% 0%;
 }
 
