@@ -285,6 +285,194 @@ window.REOTRIP_SHOP = {
         "At Landmark 81, 720A Dien Bien Phu, Ho Chi Minh City, Vietnam, show the official e-ticket and follow the presentation instructions on that e-ticket. A payment receipt and our order confirmation email are not entry tickets."
       ],
       paymentLink: "https://buy.stripe.com/9B64gAagugA8eL91Hpgfu06"
+    },
+    popland: {
+      name: "Beijing Labubu Pop Land One Day Pass",
+      path: "en/china/beijing-labubu-pop-land-one-day-pass-p38/",
+      location: "Beijing, China",
+      priceLabel: "HKD 231.97",
+      tickets: [{ code: "adult", label: "Adult, height over 1.4 m", priceLabel: "HKD 231.97" }],
+      cancellation: "Non-refundable. The sale is final and cancellations are not refundable.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "Real-name entry. Each person who enters provides their name, passport, and phone number. Each ticket has one identity-document number. After payment, order@reotrip.com emails the guest to collect those details, and the ticket is issued only after they are collected.",
+        "The official admission ticket is emailed separately. Check your inbox and your spam folder. The QR code on the order confirmation page is not the admission ticket. A payment receipt and our order confirmation email are not admission tickets.",
+        "Entry is by the code on the official ticket or by the identity document. An electronic ticket or a printout is accepted.",
+        "The same identity document can buy this ticket type only once on the same day, and the ticket is only for that person. Bring the original of the registered identity document."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "Real-name entry. Each person who enters provides their name, passport, and phone number. Each ticket has one identity-document number. After payment, order@reotrip.com emails the guest to collect those details, and the ticket is issued only after they are collected.",
+        "The official admission ticket is emailed separately. Check your inbox and your spam folder. The QR code on the order confirmation page is not the admission ticket. A payment receipt and our order confirmation email are not admission tickets.",
+        "Entry is by the code on the official ticket or by the identity document. An electronic ticket or a printout is accepted.",
+        "The same identity document can buy this ticket type only once on the same day, and the ticket is only for that person. Bring the original of the registered identity document."
+      ],
+      paymentLink: ""
+    },
+    hkdisneyearlypremier3: {
+      name: "Hong Kong Disneyland Ticket with Early Entry and 3-Attraction Premier Access",
+      path: "en/hongkong-macau/hong-kong-disneyland-ticket-early-entry-pass-premier-access-p228/",
+      location: "Hong Kong",
+      priceLabel: "HKD 1847.76",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 1847.76" }],
+      cancellation: "Non-refundable.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Hong_Kong",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      reviewNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official electronic ticket or paper ticket. The ticket can be used once. Entering again after leaving requires another ticket. Our order confirmation cannot be used to enter."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official electronic ticket or paper ticket. The ticket can be used once. Entering again after leaving requires another ticket. Our order confirmation cannot be used to enter."
+      ],
+      paymentLink: ""
+    },
+    tokyodisneylandonly: {
+      name: "Tokyo Disneyland One-Day Ticket",
+      path: "en/japan/tokyo-disneyland-ticket-and-optional-tokyo-subway-pass-p11/",
+      location: "Tokyo, Japan",
+      priceLabel: "HKD 885.14",
+      tickets: [{ code: "adult", label: "Adult, age 18-99", priceLabel: "HKD 885.14" }],
+      cancellation: "Non-refundable. The booking cannot be cancelled and cannot be changed.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      closedWeekdays: ["Thursday"],
+      reviewNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official ticket. A phone or a paper ticket is accepted.",
+        "Tokyo Subway Pass is not included.",
+        "This ticket is not available to holders of Japanese passports."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official ticket. A phone or a paper ticket is accepted.",
+        "Tokyo Subway Pass is not included.",
+        "This ticket is not available to holders of Japanese passports."
+      ],
+      paymentLink: ""
+    },
+    busansky: {
+      name: "Busan X the Sky Admission Ticket",
+      path: "en/korea/busan-sky-tower-admission-ticket-p24/",
+      location: "Busan, South Korea",
+      priceLabel: "HKD 154.49",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 154.49" }],
+      cancellation: "Non-refundable. A cancellation or change is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Seoul",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      reviewNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "The ticket we send is the official admission ticket. Print it and bring it. Our order confirmation cannot be used to enter."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "The ticket we send is the official admission ticket. Print it and bring it. Our order confirmation cannot be used to enter."
+      ],
+      paymentLink: ""
+    },
+    yuanmingyuanafternoon: {
+      name: "Beijing Old Summer Palace (Yuan Ming Yuan) Ticket - Afternoon Session",
+      path: "en/china/beijing-old-summer-palace-yuan-ming-yuan-park-ticket-p183/",
+      location: "Beijing, China",
+      priceLabel: "HKD 63.00",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 63.00" }],
+      cancellation: "Non-refundable.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      closedWeekdays: ["Monday"],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder.",
+        "Show the official electronic ticket or a printout, together with the original passport or identity document. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Entry is during the afternoon session, 12:00-16:30 (Beijing time), on the date you select."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder.",
+        "Show the official electronic ticket or a printout, together with the original passport or identity document. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Entry is during the afternoon session, 12:00-16:30 (Beijing time), on the date you select."
+      ],
+      paymentLink: ""
+    },
+    banahills3coaster: {
+      name: "Ba Na Hills Ticket with Cable Car and 3 Alpine Coaster Rides",
+      path: "en/vietnam/ba-na-hills-and-golden-bridge-ticket-with-optional-coaster-p468/",
+      location: "Da Nang, Vietnam",
+      priceLabel: "HKD 575.00",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 575.00" }],
+      cancellation: "Non-refundable.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Ho_Chi_Minh",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      closedDates: ["2027-02-06", "2027-02-07", "2027-02-08", "2027-02-09", "2027-02-10", "2027-02-11", "2027-02-12"],
+      reviewNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder.",
+        "A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official e-ticket. A phone or a printout is accepted."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder.",
+        "A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official e-ticket. A phone or a printout is accepted."
+      ],
+      paymentLink: ""
+    },
+    banahillsbus: {
+      name: "Ba Na Hills Ticket with Cable Car and Round-Trip Bus from Da Nang",
+      path: "en/vietnam/ba-na-hills-ticket-with-cable-car-and-round-trip-bus-from-da-nang-p473/",
+      location: "Da Nang, Vietnam",
+      priceLabel: "HKD 559.00",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 559.00" }],
+      cancellation: "Non-refundable.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Ho_Chi_Minh",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      closedDates: ["2027-02-06", "2027-02-07", "2027-02-08", "2027-02-09", "2027-02-10", "2027-02-11", "2027-02-12"],
+      reviewNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official ticket. A phone or a printout is accepted.",
+        "The bus leaves Da Nang at 08:30 and returns from Ba Na Hills at 16:30. Arrive 15 minutes early.",
+        "The boarding point is confirmed by email from order@reotrip.com before the visit."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm the order by email.",
+        "The official ticket is issued separately and is emailed by order@reotrip.com within one week before the visit. Check your spam folder. A payment receipt and our order confirmation email are not the admission ticket.",
+        "Show the official ticket. A phone or a printout is accepted.",
+        "The bus leaves Da Nang at 08:30 and returns from Ba Na Hills at 16:30. Arrive 15 minutes early.",
+        "The boarding point is confirmed by email from order@reotrip.com before the visit."
+      ],
+      paymentLink: ""
     }
   }
 };
