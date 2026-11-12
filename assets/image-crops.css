@@ -1,0 +1,56 @@
+/* Crop positions only; card dimensions and grid breakpoints belong to the layout. */
+/* The img type keeps these positions above the existing generic crop rules. */
+[data-shop-card="harukas300"] img.shop-card-photo {
+  /* Top alignment also preserves the tower in the 376x150 / 282x140 feature. */
+  object-position: 54% 0%;
+}
+
+[data-shop-card="teamlabmacao"] img.shop-card-photo {
+  object-position: 50% 55%;
+}
+
+[data-shop-card="shanghaihappyvalley"] img.shop-card-photo {
+  object-position: 50% 85%;
+}
+
+[data-shop-card="yugardenmorning"] img.shop-card-photo {
+  object-position: 50% 16%;
+}
+
+[data-shop-card="keio1day"] img.shop-card-photo {
+  object-position: 60% 78%;
+}
+
+[data-shop-card="kyototower"] img.shop-card-photo {
+  object-position: 55% 0%;
+}
+
+[data-shop-card="landmark81"] img.shop-card-photo {
+  object-position: 50% 0%;
+}
+
+@media (width < 600px) {
+  [data-shop-card="harukas300"] img.shop-card-photo {
+    object-position: 54% 0%;
+  }
+
+  [data-shop-card="teamlabmacao"] img.shop-card-photo {
+    object-position: 68% 55%;
+  }
+
+  [data-shop-card="shanghaihappyvalley"] img.shop-card-photo {
+    object-position: 38% 85%;
+  }
+
+  [data-shop-card="yugardenmorning"] img.shop-card-photo {
+    object-position: 50% 0%;
+  }
+
+  [data-shop-card="keio1day"] img.shop-card-photo {
+    object-position: 64% 78%;
+  }
+
+  [data-shop-card="kyototower"] img.shop-card-photo {
+    object-position: 55% 0%;
+  }
+}

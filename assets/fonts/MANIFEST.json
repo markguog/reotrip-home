@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-11-12",
+  "distribution": "Unmodified static Latin normal WOFF2 files only",
+  "license": "OFL-1.1",
+  "stylesheet": "assets/fonts.css",
+  "packages": [
+    {
+      "id": "sora",
+      "family": "Sora",
+      "upstream_metadata_version": "v17",
+      "weights": [
+        600,
+        700
+      ],
+      "upstream_project": "https://github.com/sora-xor/sora-font",
+      "archive_sha256": "3bc31b2b3e2194d8a56c7188c7bf92fea053e684ad1d8ef2b518de2443138b36",
+      "npm_integrity": "sha512-SqW3OpKxxfKvxDLPlbdrWf2KooPfbd+W3jaYn483o+Y/JrmU87vjFPNptDqwP428c3vY+gnranLhjcbRaXB0Jw==",
+      "name": "@fontsource/sora",
+      "version": "5.3.0",
+      "registry_metadata": "https://registry.npmjs.org/@fontsource/sora/5.3.0",
+      "tarball": "https://registry.npmjs.org/@fontsource/sora/-/sora-5.3.0.tgz",
+      "package_repository": "https://github.com/fontsource/font-files/tree/main/fonts/google/sora",
+      "license": "assets/fonts/sora/LICENSE",
+      "integrity_verified": true,
+      "files": [
+        {
+          "path": "assets/fonts/sora/LICENSE",
+          "bytes": 4382,
+          "sha256": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9",
+          "package_member": "package/LICENSE",
+          "type": "license"
+        },
+        {
+          "path": "assets/fonts/sora/sora-latin-600-normal.woff2",
+          "bytes": 15000,
+          "sha256": "fa9ab76f30510ad92153c6d6d72d0508884b85e9f0148abdfa963231b2a4845a",
+          "package_member": "package/files/sora-latin-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        },
+        {
+          "path": "assets/fonts/sora/sora-latin-700-normal.woff2",
+          "bytes": 15128,
+          "sha256": "c3337a673c9bbbfe433091d3831714dd9a257951f16f41eb3fc650ec593cfac2",
+          "package_member": "package/files/sora-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        }
+      ]
+    },
+    {
+      "id": "manrope",
+      "family": "Manrope",
+      "upstream_metadata_version": "v20",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "upstream_project": "https://github.com/sharanda/manrope",
+      "archive_sha256": "c783757a5bf3b7613ef19b24f54bab85dbdea1c2b2498daaa3655ee0711623de",
+      "npm_integrity": "sha512-obJ1Dv3+uCA6HlHgW8u4BGYxJR9In2HW7gjJhlflEvkrj1X1iSEwu0fToL+JYGC/FEKFfIz1sBuPduvcL2gIAA==",
+      "name": "@fontsource/manrope",
+      "version": "5.3.0",
+      "registry_metadata": "https://registry.npmjs.org/@fontsource/manrope/5.3.0",
+      "tarball": "https://registry.npmjs.org/@fontsource/manrope/-/manrope-5.3.0.tgz",
+      "package_repository": "https://github.com/fontsource/font-files/tree/main/fonts/google/manrope",
+      "license": "assets/fonts/manrope/LICENSE",
+      "integrity_verified": true,
+      "files": [
+        {
+          "path": "assets/fonts/manrope/LICENSE",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+          "package_member": "package/LICENSE",
+          "type": "license"
+        },
+        {
+          "path": "assets/fonts/manrope/manrope-latin-400-normal.woff2",
+          "bytes": 14108,
+          "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+          "package_member": "package/files/manrope-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        },
+        {
+          "path": "assets/fonts/manrope/manrope-latin-600-normal.woff2",
+          "bytes": 14172,
+          "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+          "package_member": "package/files/manrope-latin-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        },
+        {
+          "path": "assets/fonts/manrope/manrope-latin-700-normal.woff2",
+          "bytes": 14212,
+          "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71",
+          "package_member": "package/files/manrope-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        }
+      ]
+    },
+    {
+      "id": "ibm-plex-mono",
+      "family": "IBM Plex Mono",
+      "upstream_metadata_version": "v20",
+      "weights": [
+        400,
+        500
+      ],
+      "upstream_project": "https://github.com/IBM/plex",
+      "archive_sha256": "60d3c0cfa549cb06fcb8867ee83f994d78e212abfac3bef3275436acb5c4d029",
+      "npm_integrity": "sha512-eTgnZjZEGk1QtD3ZstF+Vclo2HLAni8YMy34/DxllwZvyz1lR/1RF/xTiAquOBO7MvqBx8D2Ig2WCPMVfdZu7Q==",
+      "name": "@fontsource/ibm-plex-mono",
+      "version": "5.3.0",
+      "registry_metadata": "https://registry.npmjs.org/@fontsource/ibm-plex-mono/5.3.0",
+      "tarball": "https://registry.npmjs.org/@fontsource/ibm-plex-mono/-/ibm-plex-mono-5.3.0.tgz",
+      "package_repository": "https://github.com/fontsource/font-files/tree/main/fonts/google/ibm-plex-mono",
+      "license": "assets/fonts/ibm-plex-mono/LICENSE",
+      "integrity_verified": true,
+      "files": [
+        {
+          "path": "assets/fonts/ibm-plex-mono/LICENSE",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "package_member": "package/LICENSE",
+          "type": "license"
+        },
+        {
+          "path": "assets/fonts/ibm-plex-mono/ibm-plex-mono-latin-400-normal.woff2",
+          "bytes": 14708,
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "package_member": "package/files/ibm-plex-mono-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        },
+        {
+          "path": "assets/fonts/ibm-plex-mono/ibm-plex-mono-latin-500-normal.woff2",
+          "bytes": 14888,
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+          "package_member": "package/files/ibm-plex-mono-latin-500-normal.woff2",
+          "weight": 500,
+          "style": "normal",
+          "subset": "latin",
+          "format": "woff2"
+        }
+      ]
+    }
+  ]
+}
