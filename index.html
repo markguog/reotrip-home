@@ -13,32 +13,45 @@
     <link rel="stylesheet" href="assets/site.css">
     <title>ReoTrip</title>
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-header">
-      <a class="brand" href="./" aria-label="ReoTrip home">Reo<span>Trip</span></a>
+      <a class="brand" href="./" aria-label="ReoTrip home">
+        <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-5 7-7 9-7s6 2 9 7c-3 5-7 7-9 7s-6-2-9-7Z"></path><circle cx="12" cy="12" r="2.5"></circle></svg></span>
+        <span class="brand-word">ReoTrip</span>
+      </a>
       <nav aria-label="Site navigation">
-        <a href="#tickets">Tickets</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#contact">Contact</a>
-        <a class="active" href="./" lang="en" aria-current="page">EN</a>
-        <a href="ko/" lang="ko">KO</a>
+        <a href="./#tickets">Tickets</a>
+        <a href="./#how-it-works">How it works</a>
+        <a class="nav-agencies" href="./#for-agencies"><span class="nav-label-desktop">For travel agencies</span><span class="nav-label-mobile">Agencies</span></a>
+        <a href="./#contact">Contact</a>
+        <a class="nav-language" href="./ko/" lang="ko" hreflang="ko">한국어</a>
+        <a class="nav-cta" href="./#tickets">Browse tickets</a>
       </nav>
+      <div class="header-languages" aria-label="Languages"><a href="./" lang="en">EN</a><a href="./ko/" lang="ko" hreflang="ko">KO</a></div>
     </header>
-    <section class="home-hero" aria-labelledby="intro-title">
-      <picture class="home-hero-media">
-        <source media="(max-width: 960px)" srcset="assets/img/hero-asia-960.jpg" width="960" height="640">
-        <img src="assets/img/hero-asia-1920.jpg" width="1920" height="1280" alt="Tokyo skyline at dusk" fetchpriority="high">
-      </picture>
-      <div class="home-hero-copy">
-        <p class="eyebrow">Destination management in Asia</p>
-        <h1 id="intro-title">ReoTrip</h1>
-        <p class="lede">Asia-focused, technology-driven DMC. Destination experiences, accommodation, and distribution technology.</p>
-        <a class="shop-button hero-button" href="#tickets">Browse tickets</a>
-      </div>
-    </section>
-    <main>
+    <main class="home-main">
+      <section class="home-intro" aria-labelledby="intro-title">
+        <div class="home-hero">
+          <div class="home-hero-copy">
+            <p class="hero-eyebrow">Bookable online · e-tickets by email</p>
+            <h1 id="intro-title">Tickets for Asia's landmarks, booked online.</h1>
+            <p class="lede"><span class="lede-desktop">Observation decks, theme parks, museums and gardens in Japan, Korea, Hong Kong, Macao, mainland China and Vietnam. Choose a date, pay by card and receive your e-ticket by email.</span><span class="lede-mobile">Observation decks, theme parks, museums and gardens across Asia. Choose a date, pay by card and receive your e-ticket by email.</span></p>
+            <div class="hero-actions"><a class="shop-button" href="#tickets">Browse tickets</a><a class="shop-button button-outline" href="#for-agencies">For travel agencies</a></div>
+            <p class="hero-cities">Osaka · Tokyo · Kyoto · Seoul · Hong Kong · Macao · Shanghai · Ho Chi Minh City</p>
+          </div>
+          <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
+            <img class="shop-card-photo" src="assets/img/osaka-abeno-800.jpg" width="800" height="600" alt="Abeno Harukas from Keitakuen in Osaka" loading="lazy" decoding="async">
+            <span class="shop-card-body">
+              <span class="shop-card-name">Osaka Abeno Harukas 300 Observatory Ticket</span>
+              <span class="shop-card-meta">Osaka, Japan</span>
+              <span class="shop-card-price">From HKD 121.15</span>
+              <span class="shop-card-cta">View ticket</span>
+            </span>
+          </a>
+        </div>
+      </section>
       <section class="shop-products" id="tickets" aria-labelledby="bookable-title" data-shop-products>
-        <h2 id="bookable-title">Bookable products</h2>
+        <div class="section-title-row"><div class="section-heading"><span class="section-eyebrow">Bookable products</span><h2 id="bookable-title">Tickets you can book today</h2></div><p>Prices are per adult ticket, in Hong Kong dollars (HKD).</p></div>
         <div class="shop-grid">
           <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
             <img class="shop-card-photo" src="assets/img/osaka-abeno-800.jpg" width="800" height="600" alt="Abeno Harukas from Keitakuen in Osaka" loading="lazy" decoding="async">
@@ -141,42 +154,52 @@
           </a>
         </div>
       </section>
-      <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
-        <h2 id="how-title">How it works</h2>
+      <section class="service-facts" aria-label="Service facts">
+        <div><span class="section-eyebrow">Prices</span><strong>HKD</strong><span>Listed in Hong Kong dollars</span></div>
+        <div><span class="section-eyebrow">Payment</span><strong>Card &amp; wallets</strong><span>On the hosted payment page</span></div>
+        <div><span class="section-eyebrow">Delivery</span><strong>By email</strong><span>E-tickets and vouchers from order@reotrip.com</span></div>
+        <div><span class="section-eyebrow">Dates</span><strong>You choose</strong><span>Each ticket page shows the dates you can book</span></div>
+      </section>
+      <section class="how-it-works" id="how-it-works" aria-label="How it works">
         <ol class="how-steps">
           <li>
-            <span class="step-number" aria-hidden="true">1</span>
+            <span class="step-number">01 · Choose</span>
             <h3>Choose a ticket and a date</h3>
             <p>Pick a ticket and the date you plan to visit.</p>
           </li>
           <li>
-            <span class="step-number" aria-hidden="true">2</span>
+            <span class="step-number">02 · Pay</span>
             <h3>Review and pay</h3>
             <p>Check your order, then pay on the payment page. Prices are in Hong Kong dollars (HKD).</p>
           </li>
           <li>
-            <span class="step-number" aria-hidden="true">3</span>
+            <span class="step-number">03 · Receive</span>
             <h3>Get your ticket by email</h3>
             <p>We confirm your order by email. Your e-ticket or voucher is sent from order@reotrip.com; each ticket page says when.</p>
           </li>
         </ol>
       </section>
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <div class="contact-list">
-          <a href="mailto:agency@reotrip.com">agency@reotrip.com</a>
-          <a href="mailto:order@reotrip.com">order@reotrip.com</a>
-        </div>
-      </section>
     </main>
-    <footer class="site-footer">
-      <span>REOTRIP TECHNOLOGY LIMITED</span>
-      <nav aria-label="Policies and contact">
-        <a href="mailto:order@reotrip.com">order@reotrip.com</a>
-        <a href="en/cancellation/">Cancellation and refunds</a>
-        <a href="en/terms/">Terms of use</a>
-        <a href="en/privacy/">Privacy policy</a>
-      </nav>
+    <section class="for-agencies" id="for-agencies" aria-labelledby="agencies-title">
+      <div class="agencies-inner">
+        <div class="agencies-copy">
+          <span class="section-eyebrow">For travel agencies</span>
+          <h2 id="agencies-title">Net rates for travel agencies</h2>
+          <p>ReoTrip is an Asia-focused, technology-driven DMC for destination-experience distribution, accommodation distribution, and direct-sale and distribution technology, with more than 40,000 directly contracted hotels and more than 6,000 destination experiences.</p>
+          <a class="shop-button" href="mailto:agency@reotrip.com">Email agency@reotrip.com</a>
+          <span class="agency-contact-note">Travel agencies, quotes and partnership: agency@reotrip.com</span>
+        </div>
+        <div class="distribution-partners"><strong>Distribution partners</strong><div><span>TripAdvisor</span><span>Viator</span><span>GetYourGuide</span><span>Civitatis</span><span>HBX Group</span><span>WebBeds</span><span>Tripster</span><span>Sputnik8</span><span>NOL</span><span>MyRealTrip</span></div></div>
+      </div>
+    </section>
+    <footer class="site-footer" id="contact">
+      <div class="footer-columns">
+        <div class="footer-brand"><span class="footer-logo">ReoTrip</span><p>Asia-focused, technology-driven DMC. Operated by REOTRIP TECHNOLOGY LIMITED, Hong Kong.</p></div>
+        <div><strong>Orders</strong><a href="mailto:order@reotrip.com">order@reotrip.com</a><span>Order questions, e-tickets and vouchers</span></div>
+        <div><strong>Travel agencies</strong><a href="mailto:agency@reotrip.com">agency@reotrip.com</a><span>Quotes and partnership</span></div>
+        <div class="footer-policies"><strong>Policies</strong><a href="./en/cancellation/">Cancellation and refund policy</a><a href="./en/terms/">Terms</a><a href="./en/privacy/">Privacy</a></div>
+      </div>
+      <div class="footer-bottom"><span>© REOTRIP TECHNOLOGY LIMITED · reotrip.com</span><nav aria-label="Footer languages"><a href="./" lang="en">English</a><a href="./ko/" lang="ko" hreflang="ko">한국어</a></nav></div>
     </footer>
     <script src="assets/shop-config.js"></script>
     <script src="assets/shop.js"></script>
