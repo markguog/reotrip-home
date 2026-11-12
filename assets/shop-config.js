@@ -2,6 +2,8 @@
 // payment link is shown as not bookable. The payment link is a public Stripe
 // Payment Link address (not a secret). Source of each link: reo-ops
 // _cowork/codex_artifacts/REOTRIP-STRIPE-LINKS-<UTC>/links.json.
+// To stop selling a product, set its paymentLink to "" and keep the entry: the
+// order-status page needs the entry to show a returning guest's payment.
 window.REOTRIP_SHOP = {
   products: {
     harukas300: {

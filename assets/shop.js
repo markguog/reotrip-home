@@ -4,13 +4,15 @@
 (function () {
   "use strict";
 
-  var shop = window.REOTRIP_SHOP || { products: {} };
+  var shop = window.REOTRIP_SHOP;
+  var products = shop && shop.products && typeof shop.products === "object" ? shop.products : {};
   var PAYMENT_LINK = /^https:\/\/buy\.stripe\.com\/[A-Za-z0-9]+$/;
   var ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
-  var SESSION_ID = /^cs_(live|test)_[A-Za-z0-9]+$/;
+  // The Payment Link is in live mode, so a real return carries a live Checkout Session id.
+  var SESSION_ID = /^cs_live_[A-Za-z0-9]{20,}$/;
 
   function product(code) {
-    return Object.prototype.hasOwnProperty.call(shop.products, code) ? shop.products[code] : null;
+    return Object.prototype.hasOwnProperty.call(products, code) ? products[code] : null;
   }
 
   function bookable(item) {
@@ -86,7 +88,7 @@
     for (var i = 0; i < nodes.length; i += 1) nodes[i].hidden = !visible;
   }
 
-  // Home: a product card is shown only while the product can be paid for.
+  // Home: the products block ships hidden; it is shown only with a card that can be paid for.
   function cards() {
     var nodes = document.querySelectorAll("[data-shop-card]");
     for (var i = 0; i < nodes.length; i += 1) {
@@ -94,7 +96,7 @@
     }
     var blocks = document.querySelectorAll("[data-shop-products]");
     for (var j = 0; j < blocks.length; j += 1) {
-      if (!blocks[j].querySelector("[data-shop-card]")) blocks[j].hidden = true;
+      blocks[j].hidden = !blocks[j].querySelector("[data-shop-card]");
     }
   }
 
@@ -107,16 +109,17 @@
     var select = form.querySelector('select[name="ticket"]');
     var submit = form.querySelector('button[type="submit"]');
     var error = form.querySelector("[data-booking-error]");
+    // The controls ship disabled and are enabled only for a product that can be paid for.
     if (!bookable(item)) {
-      date.disabled = true;
-      select.disabled = true;
-      submit.disabled = true;
       show(document, "unavailable", true);
       return;
     }
     var range = dateWindow(item);
     date.min = range.min;
     date.max = range.max;
+    date.disabled = false;
+    select.disabled = false;
+    submit.disabled = false;
     form.addEventListener("submit", function (event) {
       if (!validDate(item, date.value) || !ticket(item, select.value)) {
         event.preventDefault();
@@ -142,6 +145,7 @@
     var date = params.get("date") || "";
     var chosen = item ? ticket(item, params.get("ticket") || "") : null;
     var pay = root.querySelector("[data-pay]");
+    show(root, "fallback", false);
     if (!item || !chosen || !validDate(item, date)) {
       show(root, "summary", false);
       show(root, "invalid", true);
@@ -187,8 +191,12 @@
     setText(root, "reference", session.slice(-10));
   }
 
-  cards();
-  bookingForm();
-  review();
-  confirmed();
+  // Each page uses one of these; a failure in one leaves its page in the closed state.
+  [cards, bookingForm, review, confirmed].forEach(function (run) {
+    try {
+      run();
+    } catch (err) {
+      // Nothing is enabled or revealed when a step fails.
+    }
+  });
 })();
