@@ -116,7 +116,6 @@ h1 {
   position: relative;
   display: grid;
   align-items: end;
-  min-height: calc(100svh - 78px);
   overflow: hidden;
   color: #fff;
   background: #121416;
@@ -525,10 +524,6 @@ footer a {
 @media (max-width: 640px) {
   .site-header {
     min-height: 66px;
-  }
-
-  .home-hero {
-    min-height: calc(100svh - 66px);
   }
 
   .intro {
