@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="ReoTrip order status.">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="../../../assets/site.css">
+    <title>Order status · ReoTrip</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../" aria-label="ReoTrip home">Reo<span>Trip</span></a>
+    </header>
+    <main class="shop-main" data-shop-confirmed>
+      <div data-state="paid" hidden>
+        <h1 class="shop-title">Payment received</h1>
+        <p class="shop-lede">Thank you. Payment was received.</p>
+        <dl class="shop-summary">
+          <dt>Product</dt><dd data-field="name"></dd>
+          <dt>Reference</dt><dd data-field="reference"></dd>
+        </dl>
+        <section class="shop-section">
+          <h2>What happens next</h2>
+          <ul>
+            <li>Your e-voucher is sent by email from order@reotrip.com as a PDF attachment, to the address you gave at checkout.</li>
+            <li>The e-voucher is valid for about six months from the date of purchase.</li>
+            <li>Redeem it at the information counter on the 16th floor (16F) of the HARUKAS 300 observatory in Abeno Harukas.</li>
+          </ul>
+        </section>
+      </div>
+      <div data-state="unknown">
+        <h1 class="shop-title">Order status</h1>
+        <p class="shop-lede">No payment is shown here. This page shows a payment only when you return to it from the payment page.</p>
+      </div>
+      <p class="shop-note">Order support: <a href="mailto:order@reotrip.com">order@reotrip.com</a></p>
+      <p class="shop-note"><a href="../../cancellation/">Cancellation and refund policy</a> · <a href="../../../">Back to products</a></p>
+    </main>
+    <footer class="site-footer">
+      <span>REOTRIP TECHNOLOGY LIMITED</span>
+      <nav aria-label="Policies and contact">
+        <a href="mailto:order@reotrip.com">order@reotrip.com</a>
+        <a href="../../cancellation/">Cancellation and refunds</a>
+        <a href="../../terms/">Terms of use</a>
+        <a href="../../privacy/">Privacy policy</a>
+      </nav>
+    </footer>
+    <script src="../../../assets/shop-config.js"></script>
+    <script src="../../../assets/shop.js"></script>
+  </body>
+</html>
