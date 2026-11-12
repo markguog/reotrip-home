@@ -295,6 +295,12 @@ main, .agencies-inner { width: min(1296px, calc(100% - 80px)); margin: 0 auto; }
   .shop-summary dd { margin-bottom: .7rem; }
   .shop-button { width: 100%; }
 }
+@media (max-width: 379px) {
+  .shop-grid .shop-card { min-height: 140px; }
+  .shop-grid .shop-card-body { grid-template-rows: auto minmax(0, 1fr) auto auto; }
+  .shop-grid .shop-card-price { grid-column: 1 / -1; grid-row: 3; }
+  .shop-grid .shop-card-cta { grid-column: 1 / -1; grid-row: 4; justify-self: start; }
+}
 @media (max-width: 599px) and (max-height: 860px) {
   .home-hero { padding-block: 20px; gap: 14px; }
   .home-hero-copy { gap: 14px; }
