@@ -150,7 +150,7 @@ main, .agencies-inner { width: min(1296px, calc(100% - 80px)); margin: 0 auto; }
 .legal-document > ol li { break-inside: avoid; margin: .4rem 0; }
 .shop-main { width: min(860px, 90vw); padding: 4rem 0 6rem; }
 .shop-crumbs { margin: 0 0 2rem; color: var(--muted); font-size: .85rem; }
-.shop-crumbs a { display: inline-flex; align-items: center; min-height: 44px; }
+.shop-crumbs a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
 .shop-title { max-width: none; margin-bottom: 1rem; font-size: 64px; line-height: 1; overflow-wrap: break-word; }
 .shop-lede { margin: 0 0 2rem; color: var(--muted); font-size: 1.15rem; line-height: 1.5; }
 .shop-section { margin: 2.5rem 0; padding-top: 1.25rem; border-top: 1px solid var(--line); }
@@ -167,7 +167,7 @@ main, .agencies-inner { width: min(1296px, calc(100% - 80px)); margin: 0 auto; }
 .shop-hint { margin: 0; color: var(--subtle); font-size: .9rem; font-weight: 400; line-height: 1.5; }
 .shop-hint a, .home-link, .legal-document a { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; }
 .shop-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin: 1.5rem 0; }
-.shop-actions > a { display: inline-flex; align-items: center; min-height: 44px; }
+.shop-actions > a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
 .shop-alert { margin: 0; color: var(--danger); font-weight: 700; }
 .shop-note { color: var(--muted); line-height: 1.6; }
 .shop-note > a, .shop-section p > a { display: inline-flex; align-items: center; min-height: 44px; }
