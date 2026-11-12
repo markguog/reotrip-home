@@ -48,10 +48,33 @@
     return { min: min, max: max };
   }
 
+  // Weekday of a calendar date in the product's time zone. Noon UTC stays on that
+  // calendar date from UTC-11 through UTC+12, which covers Asia/Macau and Asia/Tokyo.
+  function weekdayInZone(iso, timeZone) {
+    var instant = new Date(iso + "T12:00:00Z");
+    if (isNaN(instant.getTime())) return "";
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: timeZone || "UTC",
+      weekday: "long"
+    }).format(instant);
+  }
+
+  function isClosedWeekday(item, value) {
+    var closed = item && Array.isArray(item.closedWeekdays) ? item.closedWeekdays : [];
+    if (!closed.length || !ISO_DATE.test(value || "")) return false;
+    var name = weekdayInZone(value, item.timeZone).toLowerCase();
+    if (!name) return false;
+    for (var i = 0; i < closed.length; i += 1) {
+      if (String(closed[i]).toLowerCase() === name) return true;
+    }
+    return false;
+  }
+
   function validDate(item, value) {
     if (!ISO_DATE.test(value || "")) return false;
     var parsed = new Date(value + "T00:00:00Z");
     if (isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== value) return false;
+    if (isClosedWeekday(item, value)) return false;
     var range = dateWindow(item);
     return value >= range.min && value <= range.max;
   }
@@ -129,6 +152,7 @@
     var select = form.querySelector('select[name="ticket"]');
     var submit = form.querySelector('button[type="submit"]');
     var error = form.querySelector("[data-booking-error]");
+    var closedError = form.querySelector("[data-booking-closed]");
     // The controls ship disabled and are enabled only for a product that can be paid for.
     if (!bookable(item)) {
       show(document, "unavailable", true);
@@ -140,13 +164,25 @@
     date.disabled = false;
     select.disabled = false;
     submit.disabled = false;
+    function showDateError() {
+      var closed = isClosedWeekday(item, date.value);
+      if (closedError) closedError.hidden = !closed;
+      if (error) error.hidden = true;
+      // A closed weekday cannot continue. Products with no closed weekdays are unchanged.
+      if (item.closedWeekdays && item.closedWeekdays.length) submit.disabled = closed;
+      return closed;
+    }
+    date.addEventListener("input", showDateError);
+    date.addEventListener("change", showDateError);
     form.addEventListener("submit", function (event) {
-      if (!validDate(item, date.value) || !ticket(item, select.value)) {
+      var closed = showDateError();
+      if (closed || !validDate(item, date.value) || !ticket(item, select.value)) {
         event.preventDefault();
-        error.hidden = false;
+        if (!closed && error) error.hidden = false;
         return;
       }
-      error.hidden = true;
+      if (error) error.hidden = true;
+      if (closedError) closedError.hidden = true;
     });
   }
 
