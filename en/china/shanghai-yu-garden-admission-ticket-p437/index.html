@@ -12,14 +12,19 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../../../" aria-label="ReoTrip home">Reo<span>Trip</span></a>
+      <a class="brand" href="../../../" aria-label="ReoTrip home">
+        <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-5 7-7 9-7s6 2 9 7c-3 5-7 7-9 7s-6-2-9-7Z"></path><circle cx="12" cy="12" r="2.5"></circle></svg></span>
+        <span class="brand-word">ReoTrip</span>
+      </a>
       <nav aria-label="Site navigation">
         <a href="../../../#tickets">Tickets</a>
         <a href="../../../#how-it-works">How it works</a>
+        <a class="nav-agencies" href="../../../#for-agencies"><span class="nav-label-desktop">For travel agencies</span><span class="nav-label-mobile">Agencies</span></a>
         <a href="../../../#contact">Contact</a>
-        <a class="active" href="../../../" lang="en">EN</a>
-        <a href="../../../ko/" lang="ko">KO</a>
+        <a class="nav-language" href="../../../ko/" lang="ko" hreflang="ko">한국어</a>
+        <a class="nav-cta" href="../../../#tickets">Browse tickets</a>
       </nav>
+      <div class="header-languages" aria-label="Languages"><a href="../../../" lang="en">EN</a><a href="../../../ko/" lang="ko" hreflang="ko">KO</a></div>
     </header>
     <main class="shop-main">
       <p class="shop-crumbs"><a href="../../../">Home</a> › Shanghai, China › Shanghai Yu Garden Admission Ticket - Morning Session</p>
@@ -90,14 +95,14 @@
         <p>The cards and wallets shown on the payment page are the ones you can use. The payment page may first show a converted amount in another currency; choose the HK$ amount to pay in HKD.</p>
       </section>
     </main>
-    <footer class="site-footer">
-      <span>REOTRIP TECHNOLOGY LIMITED</span>
-      <nav aria-label="Policies and contact">
-        <a href="mailto:order@reotrip.com">order@reotrip.com</a>
-        <a href="../../cancellation/">Cancellation and refunds</a>
-        <a href="../../terms/">Terms of use</a>
-        <a href="../../privacy/">Privacy policy</a>
-      </nav>
+    <footer class="site-footer" id="contact">
+      <div class="footer-columns">
+        <div class="footer-brand"><span class="footer-logo">ReoTrip</span><p>Asia-focused, technology-driven DMC. Operated by REOTRIP TECHNOLOGY LIMITED, Hong Kong.</p></div>
+        <div><strong>Orders</strong><a href="mailto:order@reotrip.com">order@reotrip.com</a><span>Order questions, e-tickets and vouchers</span></div>
+        <div><strong>Travel agencies</strong><a href="mailto:agency@reotrip.com">agency@reotrip.com</a><span>Quotes and partnership</span></div>
+        <div class="footer-policies"><strong>Policies</strong><a href="../../../en/cancellation/">Cancellation and refund policy</a><a href="../../../en/terms/">Terms</a><a href="../../../en/privacy/">Privacy</a></div>
+      </div>
+      <div class="footer-bottom"><span>© REOTRIP TECHNOLOGY LIMITED · reotrip.com</span><nav aria-label="Footer languages"><a href="../../../" lang="en">English</a><a href="../../../ko/" lang="ko" hreflang="ko">한국어</a></nav></div>
     </footer>
     <script src="../../../assets/shop-config.js"></script>
     <script src="../../../assets/shop.js"></script>
