@@ -16,7 +16,10 @@
   <body>
     <header class="site-header">
       <a class="brand" href="./" aria-label="ReoTrip home">Reo<span>Trip</span></a>
-      <nav aria-label="Language">
+      <nav aria-label="Site navigation">
+        <a href="#tickets">Tickets</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
         <a class="active" href="./" lang="en" aria-current="page">EN</a>
         <a href="ko/" lang="ko">KO</a>
       </nav>
@@ -30,10 +33,11 @@
         <p class="eyebrow">Destination management in Asia</p>
         <h1 id="intro-title">ReoTrip</h1>
         <p class="lede">Asia-focused, technology-driven DMC. Destination experiences, accommodation, and distribution technology.</p>
+        <a class="shop-button hero-button" href="#tickets">Browse tickets</a>
       </div>
     </section>
     <main>
-      <section class="shop-products" aria-labelledby="bookable-title" data-shop-products>
+      <section class="shop-products" id="tickets" aria-labelledby="bookable-title" data-shop-products>
         <h2 id="bookable-title">Bookable products</h2>
         <div class="shop-grid">
           <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
@@ -56,7 +60,27 @@
           </a>
         </div>
       </section>
-      <section class="contact" aria-labelledby="contact-title">
+      <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <ol class="how-steps">
+          <li>
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Choose a ticket and a date</h3>
+            <p>Pick a ticket and the date you plan to visit.</p>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Review and pay</h3>
+            <p>Check your order, then pay on the payment page. Prices are in Hong Kong dollars (HKD).</p>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Get your ticket by email</h3>
+            <p>We confirm your order by email. Your e-ticket or voucher is sent from order@reotrip.com; each ticket page says when.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
         <div class="contact-list">
           <a href="mailto:agency@reotrip.com">agency@reotrip.com</a>
