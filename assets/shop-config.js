@@ -285,6 +285,173 @@ window.REOTRIP_SHOP = {
         "At Landmark 81, 720A Dien Bien Phu, Ho Chi Minh City, Vietnam, show the official e-ticket and follow the presentation instructions on that e-ticket. A payment receipt and our order confirmation email are not entry tickets."
       ],
       paymentLink: "https://buy.stripe.com/9B64gAagugA8eL91Hpgfu06"
+    },
+    umedasky: {
+      name: "Umeda Sky Building and Kuchu Teien Observatory Ticket",
+      path: "en/japan/umeda-sky-building-and-kuchu-teien-observatory-ticket-p163/",
+      location: "Osaka, Japan",
+      priceLabel: "HKD 121.00",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 121.00" }],
+      cancellation: "Non-refundable. A sold ticket is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-02-02",
+      closedDates: [
+        "2027-01-01"
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official exchange voucher is issued within the week before the visit date. When it is issued, order@reotrip.com emails it. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "After payment, order@reotrip.com writes to collect one traveler's passport name. Only the name is needed.",
+        "Print the official exchange voucher and exchange it for a physical ticket at the 39th-floor counter. The order confirmation is not a ticket."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official exchange voucher is issued within the week before the visit date. When it is issued, order@reotrip.com emails it. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "After payment, order@reotrip.com writes to collect one traveler's passport name. Only the name is needed.",
+        "Print the official exchange voucher and exchange it for a physical ticket at the 39th-floor counter. The order confirmation is not a ticket."
+      ],
+      paymentLink: "https://buy.stripe.com/dRm7sM1JYabK9qPfyfgfu0m"
+    },
+    hongkongobservationwheel: {
+      name: "Hong Kong Observation Wheel Ticket",
+      path: "en/hongkong-macau/hong-kong-observation-wheel-ticket/",
+      location: "Hong Kong",
+      priceLabel: "HKD 22.54",
+      tickets: [{ code: "adult", label: "Adult, age 12-64", priceLabel: "HKD 22.54" }],
+      cancellation: "This ticket cannot be cancelled and cannot be refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Hong_Kong",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-01-20",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "A mobile voucher is emailed by order@reotrip.com. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Show the mobile voucher. This ticket is valid only on the date you select."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "A mobile voucher is emailed by order@reotrip.com. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Show the mobile voucher. This ticket is valid only on the date you select."
+      ],
+      paymentLink: "https://buy.stripe.com/8x2bJ2coCabKfPd85Ngfu0n"
+    },
+    templeofheaven: {
+      name: "Beijing Temple of Heaven Admission Ticket - Morning Session",
+      path: "en/china/temple-of-heaven-admission-ticket-in-beijing/",
+      location: "Beijing, China",
+      priceLabel: "HKD 94.53",
+      tickets: [{ code: "adult", label: "Adult, age 18 and above", priceLabel: "HKD 94.53" }],
+      cancellation: "Email order@reotrip.com before 16:00 on the day before the visit to cancel and receive a full refund. After that time, the booking is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-01-03",
+      closedWeekdays: [
+        "Monday"
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to collect the identity details needed for the reservation. Check your spam folder.",
+        "Admission is by the original identity document registered for the reservation. After the reservation is arranged, order@reotrip.com emails to say so.",
+        "The electronic link sent with the order is a commentary. It is not an entry ticket. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to collect the identity details needed for the reservation. Check your spam folder.",
+        "Admission is by the original identity document registered for the reservation. After the reservation is arranged, order@reotrip.com emails to say so.",
+        "The electronic link sent with the order is a commentary. It is not an entry ticket. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      paymentLink: "https://buy.stripe.com/4gM5kE9cq0BabyXadVgfu0o"
+    },
+    beijingglassmuseum: {
+      name: "Beijing Suspended Glass Art Museum Ticket",
+      path: "en/china/beijing-suspended-glass-art-museum-ticket/",
+      location: "Beijing, China",
+      priceLabel: "HKD 64.17",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 64.17" }],
+      cancellation: "Email order@reotrip.com at least 24 hours before the visit (Beijing time) to cancel and receive a full refund. A request that is not made before that time is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-01-30",
+      closedDates: [
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to confirm the name to use for the reservation. Check your spam folder.",
+        "Give the name used for the reservation when you arrive. After the reservation is arranged, order@reotrip.com emails to say so. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to confirm the name to use for the reservation. Check your spam folder.",
+        "Give the name used for the reservation when you arrive. After the reservation is arranged, order@reotrip.com emails to say so. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      paymentLink: "https://buy.stripe.com/aFa6oIgESdnW0Uj0Dlgfu0p"
+    },
+    shanghaiqinvr: {
+      name: "Shanghai Qin Dynasty Culture VR Experience Ticket",
+      path: "en/china/shanghai-qin-dynasty-culture-vr-experience-ticket/",
+      location: "Shanghai, China",
+      priceLabel: "HKD 236.79",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 236.79" }],
+      cancellation: "This ticket cannot be cancelled and cannot be refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-01-29",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to confirm the name to use for the Qin Dynasty culture VR reservation. Check your spam folder.",
+        "Enter with the name used for the reservation. This admission is only for the selected day. After the reservation is arranged, order@reotrip.com emails to say so. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "After payment, order@reotrip.com writes to confirm the name to use for the Qin Dynasty culture VR reservation. Check your spam folder.",
+        "Enter with the name used for the reservation. This admission is only for the selected day. After the reservation is arranged, order@reotrip.com emails to say so. A payment receipt and our order confirmation email are not entry documents."
+      ],
+      paymentLink: "https://buy.stripe.com/5kQ28s9cqfw46eD5XFgfu0q"
+    },
+    legendaryjapan: {
+      name: "Legendary Japan in Light, Sound, and Floats",
+      path: "en/japan/legendary-japan-in-light-sound-and-floats/",
+      location: "Tokyo, Japan",
+      priceLabel: "HKD 693.91",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 693.91" }],
+      cancellation: "Email order@reotrip.com at least 24 hours before the show (Tokyo time) to cancel and receive a full refund. A request that is not made before that time is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-01-28",
+      closedDates: [
+        "2026-12-28",
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The voucher is emailed by order@reotrip.com. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Show the voucher when you arrive. This ticket is for the first show at 10:50 (Tokyo time) on the date you select.",
+        "During float or mechanical maintenance, the operator may require a reschedule. In the worst case, the show is cancelled and fully refunded."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The voucher is emailed by order@reotrip.com. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Show the voucher when you arrive. This ticket is for the first show at 10:50 (Tokyo time) on the date you select.",
+        "During float or mechanical maintenance, the operator may require a reschedule. In the worst case, the show is cancelled and fully refunded."
+      ],
+      paymentLink: "https://buy.stripe.com/3cIaEY9cqbfOgTh4TBgfu0r"
     }
   }
 };
