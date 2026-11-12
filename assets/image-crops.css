@@ -25,6 +25,10 @@
   object-position: 55% 0%;
 }
 
+[data-shop-card="landmark81"] img.shop-card-photo {
+  object-position: 50% 0%;
+}
+
 @media (width < 600px) {
   [data-shop-card="harukas300"] img.shop-card-photo {
     object-position: 54% 0%;
