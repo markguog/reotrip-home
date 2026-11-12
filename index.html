@@ -21,20 +21,31 @@
         <a href="ko/" lang="ko">KO</a>
       </nav>
     </header>
-    <main>
-      <section class="intro" aria-labelledby="intro-title">
+    <section class="home-hero" aria-labelledby="intro-title">
+      <picture class="home-hero-media">
+        <source media="(max-width: 960px)" srcset="assets/img/hero-asia-960.jpg" width="960" height="640">
+        <img src="assets/img/hero-asia-1920.jpg" width="1920" height="1280" alt="Tokyo skyline at dusk" fetchpriority="high">
+      </picture>
+      <div class="home-hero-copy">
         <p class="eyebrow">Destination management in Asia</p>
         <h1 id="intro-title">ReoTrip</h1>
         <p class="lede">Asia-focused, technology-driven DMC. Destination experiences, accommodation, and distribution technology.</p>
-      </section>
+      </div>
+    </section>
+    <main>
       <section class="shop-products" aria-labelledby="bookable-title" data-shop-products>
         <h2 id="bookable-title">Bookable products</h2>
-        <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
-          <span class="shop-card-name">Osaka Abeno Harukas 300 Observatory Ticket</span>
-          <span class="shop-card-meta">Osaka, Japan</span>
-          <span class="shop-card-price">From HKD 121.15</span>
-          <span class="shop-card-cta">View ticket</span>
-        </a>
+        <div class="shop-grid">
+          <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
+            <img class="shop-card-photo" src="assets/img/osaka-abeno-800.jpg" width="800" height="600" alt="Abeno Harukas from Keitakuen in Osaka" loading="lazy" decoding="async">
+            <span class="shop-card-body">
+              <span class="shop-card-name">Osaka Abeno Harukas 300 Observatory Ticket</span>
+              <span class="shop-card-meta">Osaka, Japan</span>
+              <span class="shop-card-price">From HKD 121.15</span>
+              <span class="shop-card-cta">View ticket</span>
+            </span>
+          </a>
+        </div>
       </section>
       <section class="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
