@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Asia-focused, technology-driven DMC. Destination experiences, accommodation, and distribution technology.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'; object-src 'none'">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://reotrip.com/">
     <link rel="alternate" hreflang="en" href="https://reotrip.com/">
@@ -26,6 +27,15 @@
         <h1 id="intro-title">ReoTrip</h1>
         <p class="lede">Asia-focused, technology-driven DMC. Destination experiences, accommodation, and distribution technology.</p>
       </section>
+      <section class="shop-products" aria-labelledby="bookable-title" data-shop-products hidden>
+        <h2 id="bookable-title">Bookable products</h2>
+        <a class="shop-card" data-shop-card="harukas300" href="en/japan/osaka-abeno-harukas-300-observatory-ticket-p162/">
+          <span class="shop-card-name">Osaka Abeno Harukas 300 Observatory Ticket</span>
+          <span class="shop-card-meta">Osaka, Japan</span>
+          <span class="shop-card-price">From HKD 121.15</span>
+          <span class="shop-card-cta">View ticket</span>
+        </a>
+      </section>
       <section class="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
         <div class="contact-list">
@@ -34,6 +44,16 @@
         </div>
       </section>
     </main>
-    <footer><span>ReoTrip</span><span>Asia</span></footer>
+    <footer class="site-footer">
+      <span>REOTRIP TECHNOLOGY LIMITED</span>
+      <nav aria-label="Policies and contact">
+        <a href="mailto:order@reotrip.com">order@reotrip.com</a>
+        <a href="en/cancellation/">Cancellation and refunds</a>
+        <a href="en/terms/">Terms of use</a>
+        <a href="en/privacy/">Privacy policy</a>
+      </nav>
+    </footer>
+    <script src="assets/shop-config.js"></script>
+    <script src="assets/shop.js"></script>
   </body>
 </html>

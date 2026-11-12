@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="description" content="Review your ReoTrip order before payment.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <title>Review your order · ReoTrip</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="ReoTrip home">Reo<span>Trip</span></a>
+    </header>
+    <main class="shop-main" data-shop-review>
+      <p class="eyebrow">Review</p>
+      <h1 class="shop-title">Review your order</h1>
+      <div data-state="summary" hidden>
+        <dl class="shop-summary">
+          <dt>Product</dt><dd data-field="name"></dd>
+          <dt>Travel date</dt><dd data-field="date"></dd>
+          <dt>Ticket option</dt><dd data-field="ticket"></dd>
+          <dt>Unit price</dt><dd data-field="price"></dd>
+          <dt>Cancellation terms</dt><dd data-field="cancellation"></dd>
+          <dt>Payment method</dt><dd data-field="payment"></dd>
+        </dl>
+        <p class="shop-note">After review, a secure payment page opens. You choose the quantity and enter your contact details there, on Stripe's secure payment page. This site does not ask for them.</p>
+        <p class="shop-note">The payment page may first show a converted amount in another currency; choose the HK$ amount to pay in HKD.</p>
+        <p class="shop-alert" data-state="unavailable" hidden>Price unavailable · not available to book</p>
+        <div class="shop-actions">
+          <a class="shop-button disabled" data-pay aria-disabled="true" role="link">Next: payment</a>
+          <a data-back href="../../">Back</a>
+        </div>
+        <p class="shop-note">By paying, you agree to the <a href="../terms/">Terms of use</a> and the <a href="../cancellation/">Cancellation and refund policy</a>.</p>
+        <p class="shop-note">Our <a href="../privacy/">Privacy policy</a> explains how we use the details you give at checkout.</p>
+        <p class="shop-note">Merchant: REOTRIP TECHNOLOGY LIMITED, Hong Kong</p>
+        <section class="shop-section">
+          <h2>What happens next</h2>
+          <ul>
+            <li>After payment, your e-voucher is sent by email from order@reotrip.com as a PDF attachment.</li>
+            <li>The e-voucher is valid for about six months from the date of purchase.</li>
+          </ul>
+        </section>
+      </div>
+      <div data-state="invalid" hidden>
+        <p class="shop-alert">Choose a travel date from tomorrow, within the voucher's validity, and a ticket option.</p>
+        <div class="shop-actions">
+          <a class="shop-button" data-back href="../../">Back</a>
+        </div>
+      </div>
+      <p class="shop-alert" data-state="fallback">This page needs JavaScript to show your order.</p>
+    </main>
+    <footer class="site-footer">
+      <span>REOTRIP TECHNOLOGY LIMITED</span>
+      <nav aria-label="Policies and contact">
+        <a href="mailto:order@reotrip.com">order@reotrip.com</a>
+        <a href="../cancellation/">Cancellation and refunds</a>
+        <a href="../terms/">Terms of use</a>
+        <a href="../privacy/">Privacy policy</a>
+      </nav>
+    </footer>
+    <script src="../../assets/shop-config.js"></script>
+    <script src="../../assets/shop.js"></script>
+  </body>
+</html>
