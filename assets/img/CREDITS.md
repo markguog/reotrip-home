@@ -8,6 +8,10 @@ These files are the photographs shipped on the homepage. Neither license require
 | hero-asia-960.jpg | 960×640 | 180962 | https://www.pexels.com/photo/tokyo-skyline-at-dusk-with-dramatic-clouds-31416361/ | Kuma Jio | Pexels License | 2026-11-12T08:40:17Z | c6679e208a23d7d30de2062b2e6cd93d4c8c3809e4111e571315a22904a74983 |
 | osaka-abeno-800.jpg | 800×600 | 121520 | https://commons.wikimedia.org/wiki/File:Keitakuen_Garden_and_Abeno_Harukas.jpg | Sakai Yayoi | CC0 1.0 | 2026-11-12T08:40:21Z | 4bb1e268b969ee62ebc8ee4f19d6cd1dd699b87154f7f53c8fc2aaae495d8e93 |
 | macau-senado-800.jpg | 800×600 | 121809 | https://www.pexels.com/photo/historic-senado-square-in-macao-china-38783880/ | Guillaume Kremer | Pexels License | 2026-11-12T09:21:46Z | c6d361319611d01f00407df9fda267a464ae35bf95c5000b6e4be738e397a89a |
+| shanghai-happy-valley-800.jpg | 800×533 | 81597 | https://www.pexels.com/photo/aerial-view-of-residential-district-in-shanghai-36064192/ | Bingqian Li | Pexels License | 2026-11-12T10:07:02Z | 77a5e95a5c5d2f1c742831de1335fcdcaa629f0c8efaf8f267a0ec54ca882d18 |
+| shanghai-yu-garden-800.jpg | 800×1200 | 117689 | https://www.pexels.com/photo/building-at-yu-yuan-gardens-in-shanghai-18332508/ | TonyNojmanSK | Pexels License | 2026-11-12T10:06:37Z | 1b6e40a85247709a7ba17a930c58d1ec545c34bf20840e94d4b31aaba6f6a607 |
+| tokyo-keio-800.jpg | 800×593 | 116038 | https://www.pexels.com/photo/aerial-view-of-train-tracks-in-tokyo-s-kita-ward-32150481/ | Gu Ko | Pexels License | 2026-11-12T10:06:39Z | fdb0f55f19c07007b027318de12cfdeab1b1aa9825effa7a266e3c7582bd7a28 |
+| kyoto-tower-800.jpg | 800×1066 | 93697 | https://www.pexels.com/photo/iconic-kyoto-tower-under-clear-blue-sky-37606029/ | Tanvir Araf | Pexels License | 2026-11-12T10:06:37Z | 75718923f7f57cc0d20ef67dfbaa155208378c93e687de4a7a40207d28e78aba |
 
 License text read on the source pages:
 
@@ -21,3 +25,10 @@ Originals, not shipped:
 - macau-original.jpg sha256 2f10bf238abaf5f9a4706643e3297e6c950f91799987bbc8563a05e5a012784a, 5712×4284.
 
 What the pictures show: a dusk skyline of Minato, Tokyo; Abeno Harukas from Keitakuen in Osaka; Senado Square in Macau, with the wave-patterned pavement and the old civic buildings. No exhibit, no face close-up, no sign close-up. Macau Tower is not in the Macau card.
+
+Added 2026-11-12 for four more cards. The license page was read again the same day. It still says "All photos and videos on Pexels are free to use. Attribution is not required." and that the pictures may be used on a website. Each new photo page labels the picture "Free" and links to that license.
+
+- shanghai-happy-valley-800.jpg is a daytime view of red-roofed residential blocks in Shanghai (page location: Shanghai). It is a Shanghai city scene. It is not the Happy Valley park, and it is not Yu Garden.
+- shanghai-yu-garden-800.jpg is a pavilion and rockery at Yu Garden in Shanghai (page title and location: Yu Yuan Gardens, Shanghai).
+- tokyo-keio-800.jpg is commuter-rail tracks and a flat-front train in Tokyo's Kita ward (page location: Kita, Tokyo). It is a Tokyo railway scene. It is not a Shinkansen, Tokyo Tower, Skytree, or the Mt. Takao cable car or chair lift.
+- kyoto-tower-800.jpg is the daytime exterior of Kyoto Tower (page location: Kyoto). The tower is the subject. The building name on the podium is part of that exterior.
