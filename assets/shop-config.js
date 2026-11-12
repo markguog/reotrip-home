@@ -164,6 +164,127 @@ window.REOTRIP_SHOP = {
         "The ticket is valid for 90 days from the date we confirm your order, until 20:30 on the last day."
       ],
       paymentLink: "https://buy.stripe.com/8x200k4WagA846v1Hpgfu0e"
+    },
+    seoulsky: {
+      name: "Seoul: Sky Lotte World Tower Ticket",
+      path: "en/korea/seoul-sky-lotte-world-tower-ticket-p21/",
+      location: "Seoul, South Korea",
+      priceLabel: "HKD 192.79",
+      tickets: [{ code: "adult", label: "Adult, age 3-99", priceLabel: "HKD 192.79" }],
+      cancellation: "Non-refundable. The booking cannot be changed for any reason, and a cancellation or change request does not refund the amount paid.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Seoul",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2026-12-31",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued within 7 days before the visit date. The same terms also say it is sent 3 to 5 days before the visit. When it is issued, order@reotrip.com emails it. Check your spam folder.",
+        "Show the official e-ticket and your passport. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued within 7 days before the visit date. The same terms also say it is sent 3 to 5 days before the visit. When it is issued, order@reotrip.com emails it. Check your spam folder.",
+        "Show the official e-ticket and your passport. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      paymentLink: "https://buy.stripe.com/eVq00k0FU0Ba5az2Ltgfu07"
+    },
+    lotteworldsky: {
+      name: "Seoul Lotte World Day Pass and Seoul Sky Ticket",
+      path: "en/korea/seoul-lotte-world-day-pass-and-seoul-sky-ticket-p9/",
+      location: "Seoul, South Korea",
+      priceLabel: "HKD 462.00",
+      tickets: [{ code: "adult", label: "Adult, age 3-99", priceLabel: "HKD 462.00" }],
+      cancellation: "Non-refundable. The booking cannot be changed for any reason, and a cancellation or change request does not refund the amount paid.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Seoul",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-02-28",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued within 7 days before your visit date. When it is issued, order@reotrip.com emails it to you. Check your spam folder.",
+        "At Lotte World, 240 Olympic-ro, Songpa-gu, Seoul, show the official e-ticket from the email. Bring proof of age; a passport is accepted. The order confirmation and the code on it are not tickets, and a payment receipt is not an entry ticket."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued within 7 days before your visit date. When it is issued, order@reotrip.com emails it to you. Check your spam folder.",
+        "At Lotte World, 240 Olympic-ro, Songpa-gu, Seoul, show the official e-ticket from the email. Bring proof of age; a passport is accepted. The order confirmation and the code on it are not tickets, and a payment receipt is not an entry ticket."
+      ],
+      paymentLink: "https://buy.stripe.com/7sY5kE0FUdnWbyX5XFgfu08"
+    },
+    oceanparkhk: {
+      name: "Ocean Park Hong Kong Ticket",
+      path: "en/hongkong-macau/ocean-park-hong-kong-ticket/",
+      location: "Hong Kong",
+      priceLabel: "HKD 556.60",
+      tickets: [{ code: "adult", label: "Adult, age 12 and above", priceLabel: "HKD 556.60" }],
+      cancellation: "This ticket cannot be cancelled and cannot be refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Hong_Kong",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2026-12-31",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The e-ticket with a QR code is emailed by order@reotrip.com. Check the spam folder. It is not sent immediately.",
+        "Show this ticket at the park entrance, on your phone or printed on A4 paper. The QR code must be clear and scannable. A valid identity document may be checked at entry. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The e-ticket with a QR code is emailed by order@reotrip.com. Check the spam folder. It is not sent immediately.",
+        "Show this ticket at the park entrance, on your phone or printed on A4 paper. The QR code must be clear and scannable. A valid identity document may be checked at entry. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      paymentLink: "https://buy.stripe.com/8x26oI3S6es0gTh99Rgfu09"
+    },
+    madametussaudshk: {
+      name: "Madame Tussauds Hong Kong Ticket",
+      path: "en/hongkong-macau/madame-tussauds-hong-kong-ticket/",
+      location: "Hong Kong",
+      priceLabel: "HKD 236.90",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 236.90" }],
+      cancellation: "This ticket cannot be cancelled and cannot be refunded. If the operator cancels because of an unforeseen event or extreme weather, the booking can be rescheduled or fully refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Hong_Kong",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-02-03",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The e-voucher is emailed by order@reotrip.com. Check the spam folder. The e-voucher is not sent immediately.",
+        "Show the e-voucher and a valid identity document. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The e-voucher is emailed by order@reotrip.com. Check the spam folder. The e-voucher is not sent immediately.",
+        "Show the e-voucher and a valid identity document. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      paymentLink: "https://buy.stripe.com/28E9AU2O26ZybyX1Hpgfu0a"
+    },
+    landmark81: {
+      name: "Landmark 81 Saigon Skyview Ticket in Ho Chi Minh",
+      path: "en/vietnam/landmark-81-saigon-skyview-ticket-in-ho-chi-minh-p57/",
+      location: "Ho Chi Minh City, Vietnam",
+      priceLabel: "HKD 205.00",
+      tickets: [{ code: "adult", label: "Adult, age 5-100", priceLabel: "HKD 205.00" }],
+      cancellation: "Non-refundable. The booking cannot be changed for any reason, and a cancellation or change request does not refund the amount paid.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Ho_Chi_Minh",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-29",
+      closedWeekdays: ["Saturday", "Sunday"],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued 3 to 5 days before the visit date, and at the earliest within 7 days before the visit. When it is issued, order@reotrip.com emails it to you. Check your spam folder.",
+        "At Landmark 81, 720A Dien Bien Phu, Ho Chi Minh City, Vietnam, show the official e-ticket and follow the presentation instructions on that e-ticket. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The official e-ticket is issued 3 to 5 days before the visit date, and at the earliest within 7 days before the visit. When it is issued, order@reotrip.com emails it to you. Check your spam folder.",
+        "At Landmark 81, 720A Dien Bien Phu, Ho Chi Minh City, Vietnam, show the official e-ticket and follow the presentation instructions on that e-ticket. A payment receipt and our order confirmation email are not entry tickets."
+      ],
+      paymentLink: "https://buy.stripe.com/9B64gAagugA8eL91Hpgfu06"
     }
   }
 };
