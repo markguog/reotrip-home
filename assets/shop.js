@@ -19,10 +19,10 @@
     return Boolean(item && PAYMENT_LINK.test(item.paymentLink || ""));
   }
 
-  // Today in Japan, as YYYY-MM-DD.
-  function japanToday() {
+  // Today where the product is used, as YYYY-MM-DD.
+  function localToday(timeZone) {
     var parts = new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Asia/Tokyo",
+      timeZone: timeZone || "Asia/Tokyo",
       year: "numeric",
       month: "2-digit",
       day: "2-digit"
@@ -41,8 +41,11 @@
   }
 
   function dateWindow(item) {
-    var today = japanToday();
-    return { min: addDays(today, 1), max: addDays(today, item.bookableDays) };
+    var today = localToday(item.timeZone);
+    var min = addDays(today, typeof item.minDaysAhead === "number" ? item.minDaysAhead : 1);
+    var max = addDays(today, item.bookableDays);
+    if (ISO_DATE.test(item.lastDate || "") && item.lastDate < max) max = item.lastDate;
+    return { min: min, max: max };
   }
 
   function validDate(item, value) {
@@ -83,12 +86,29 @@
     for (var i = 0; i < nodes.length; i += 1) nodes[i].textContent = value;
   }
 
+  // Fill a <ul data-list="name"> from an array of strings; hide its section when empty.
+  function setList(root, name, lines) {
+    var lists = root.querySelectorAll('[data-list="' + name + '"]');
+    var items = Array.isArray(lines) ? lines : [];
+    for (var i = 0; i < lists.length; i += 1) {
+      lists[i].textContent = "";
+      for (var j = 0; j < items.length; j += 1) {
+        var li = document.createElement("li");
+        li.textContent = String(items[j]);
+        lists[i].appendChild(li);
+      }
+    }
+    var sections = root.querySelectorAll('[data-list-section="' + name + '"]');
+    for (var k = 0; k < sections.length; k += 1) sections[k].hidden = items.length === 0;
+  }
+
   function show(root, name, visible) {
     var nodes = root.querySelectorAll('[data-state="' + name + '"]');
     for (var i = 0; i < nodes.length; i += 1) nodes[i].hidden = !visible;
   }
 
-  // Home: the products block ships hidden; it is shown only with a card that can be paid for.
+  // Home: the static product list is visible without JavaScript; the script removes any
+  // card that cannot be paid for and hides the block when none is left.
   function cards() {
     var nodes = document.querySelectorAll("[data-shop-card]");
     for (var i = 0; i < nodes.length; i += 1) {
@@ -161,6 +181,7 @@
     setText(root, "price", chosen.priceLabel);
     setText(root, "cancellation", item.cancellation);
     setText(root, "payment", item.payment);
+    setList(root, "nextSteps", item.reviewNextSteps);
     backLinks(root, item);
     var href = paymentHref(item, referenceId(code, date, chosen.code));
     if (href) {
@@ -187,6 +208,7 @@
     show(root, "unknown", false);
     show(root, "paid", true);
     setText(root, "name", item.name);
+    setList(root, "nextSteps", item.confirmedNextSteps);
     // The trailing part of the Checkout Session id, case kept (Stripe ids are case-sensitive).
     setText(root, "reference", session.slice(-10));
   }
