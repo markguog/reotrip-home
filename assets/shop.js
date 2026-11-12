@@ -15,8 +15,23 @@
     return Object.prototype.hasOwnProperty.call(products, code) ? products[code] : null;
   }
 
+  // A product whose own date rules leave no selectable day is treated as not bookable.
+  function hasSelectableDate(item) {
+    if (!item || typeof item.bookableDays !== "number") return true;
+    var range = dateWindow(item);
+    if (!ISO_DATE.test(range.min) || !ISO_DATE.test(range.max) || range.min > range.max) return false;
+    var cursor = range.min;
+    var guard = 0;
+    while (cursor <= range.max && guard < 400) {
+      if (!isClosedWeekday(item, cursor) && !isClosedDate(item, cursor)) return true;
+      cursor = addDays(cursor, 1);
+      guard += 1;
+    }
+    return false;
+  }
+
   function bookable(item) {
-    return Boolean(item && PAYMENT_LINK.test(item.paymentLink || ""));
+    return Boolean(item && PAYMENT_LINK.test(item.paymentLink || "") && hasSelectableDate(item));
   }
 
   // Today where the product is used, as YYYY-MM-DD.
@@ -70,11 +85,22 @@
     return false;
   }
 
+  // Listed calendar dates only. Products that do not set closedDates are unchanged.
+  function isClosedDate(item, value) {
+    var closed = item && Array.isArray(item.closedDates) ? item.closedDates : [];
+    if (!closed.length || !ISO_DATE.test(value || "")) return false;
+    for (var i = 0; i < closed.length; i += 1) {
+      if (closed[i] === value) return true;
+    }
+    return false;
+  }
+
   function validDate(item, value) {
     if (!ISO_DATE.test(value || "")) return false;
     var parsed = new Date(value + "T00:00:00Z");
     if (isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== value) return false;
     if (isClosedWeekday(item, value)) return false;
+    if (isClosedDate(item, value)) return false;
     var range = dateWindow(item);
     return value >= range.min && value <= range.max;
   }
@@ -166,11 +192,17 @@
     submit.disabled = false;
     function showDateError() {
       var closed = isClosedWeekday(item, date.value);
+      var blocked = isClosedDate(item, date.value);
       if (closedError) closedError.hidden = !closed;
+      var blockedError = form.querySelector("[data-booking-closed-date]");
+      if (blockedError) blockedError.hidden = !blocked;
       if (error) error.hidden = true;
-      // A closed weekday cannot continue. Products with no closed weekdays are unchanged.
-      if (item.closedWeekdays && item.closedWeekdays.length) submit.disabled = closed;
-      return closed;
+      // A closed weekday or a listed closed date cannot continue.
+      // Products that set neither are unchanged.
+      var hasWeekdays = item.closedWeekdays && item.closedWeekdays.length;
+      var hasDates = item.closedDates && item.closedDates.length;
+      if (hasWeekdays || hasDates) submit.disabled = (hasWeekdays && closed) || (hasDates && blocked);
+      return closed || blocked;
     }
     date.addEventListener("input", showDateError);
     date.addEventListener("change", showDateError);
