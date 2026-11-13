@@ -10,6 +10,12 @@
 // A date on one of those weekdays cannot be booked.
 // closedDates, when set, lists YYYY-MM-DD values in that same window.
 // A listed date cannot be booked. Products that do not set it are unchanged.
+// datePrices, when set, is a list of price tiers. Each tier has priceLabel,
+// paymentLink, and ranges. ranges is a list of [start, end] pairs, YYYY-MM-DD,
+// both ends included. A date can be booked only when the usual rules also pass
+// and the date falls in a tier whose paymentLink is a real payment link. That
+// date uses the tier's price and payment link. A date in no such tier cannot
+// be selected. Products that do not set datePrices are unchanged.
 // A product with a payment link but no selectable day in its own window is not bookable.
 // reviewNextSteps / confirmedNextSteps fill "What happens next" on the review and
 // order-status pages.
@@ -149,8 +155,20 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Tokyo",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-02-03",
+      lastDate: "2027-11-12",
       closedDates: ["2027-01-01"],
+      datePrices: [
+        {
+          priceLabel: "HKD 49.91",
+          paymentLink: "https://buy.stripe.com/8x200k4WagA846v1Hpgfu0e",
+          ranges: [["2026-11-10", "2027-02-03"]]
+        },
+        {
+          priceLabel: "HKD 59.90",
+          paymentLink: "",
+          ranges: [["2027-02-04", "2027-11-12"]]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "order@reotrip.com emails your mobile voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry tickets.",
@@ -176,7 +194,18 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Seoul",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2026-12-31",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 192.79",
+          paymentLink: "https://buy.stripe.com/eVq00k0FU0Ba5az2Ltgfu07",
+          ranges: [
+            ["2026-11-10", "2026-12-31"],
+            ["2027-02-27", "2027-03-31"],
+            ["2027-04-01", "2027-11-12"]
+          ]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "The official e-ticket is issued within 7 days before the visit date. The same terms also say it is sent 3 to 5 days before the visit. When it is issued, order@reotrip.com emails it. Check your spam folder.",
@@ -200,7 +229,17 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Seoul",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-02-28",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 462.00",
+          paymentLink: "https://buy.stripe.com/7sY5kE0FUdnWbyX5XFgfu08",
+          ranges: [
+            ["2026-11-10", "2027-02-28"],
+            ["2027-03-01", "2027-11-12"]
+          ]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "The official e-ticket is issued within 7 days before your visit date. When it is issued, order@reotrip.com emails it to you. Check your spam folder.",
@@ -224,7 +263,19 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Hong_Kong",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2026-12-31",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 556.60",
+          paymentLink: "https://buy.stripe.com/8x26oI3S6es0gTh99Rgfu09",
+          ranges: [["2026-11-10", "2026-12-31"]]
+        },
+        {
+          priceLabel: "HKD 667.92",
+          paymentLink: "",
+          ranges: [["2027-01-01", "2027-11-12"]]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "The e-ticket with a QR code is emailed by order@reotrip.com. Check the spam folder. It is not sent immediately.",
@@ -248,7 +299,19 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Hong_Kong",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-02-03",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 236.90",
+          paymentLink: "https://buy.stripe.com/28E9AU2O26ZybyX1Hpgfu0a",
+          ranges: [["2026-11-10", "2027-02-03"]]
+        },
+        {
+          priceLabel: "HKD 284.28",
+          paymentLink: "",
+          ranges: [["2027-02-04", "2027-11-12"]]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "The e-voucher is emailed by order@reotrip.com. Check the spam folder. The e-voucher is not sent immediately.",

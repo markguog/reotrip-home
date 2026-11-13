@@ -23,7 +23,9 @@
     var cursor = range.min;
     var guard = 0;
     while (cursor <= range.max && guard < 400) {
-      if (!isClosedWeekday(item, cursor) && !isClosedDate(item, cursor)) return true;
+      if (!isClosedWeekday(item, cursor) && !isClosedDate(item, cursor)) {
+        if (!datePriceTiers(item) || tierForDate(item, cursor)) return true;
+      }
       cursor = addDays(cursor, 1);
       guard += 1;
     }
@@ -31,7 +33,10 @@
   }
 
   function bookable(item) {
-    return Boolean(item && PAYMENT_LINK.test(item.paymentLink || "") && hasSelectableDate(item));
+    if (!item) return false;
+    // A tiered product is for sale when one of its tiers has a day the guest can pay for.
+    if (datePriceTiers(item)) return hasSelectableDate(item);
+    return Boolean(PAYMENT_LINK.test(item.paymentLink || "") && hasSelectableDate(item));
   }
 
   // Today where the product is used, as YYYY-MM-DD.
@@ -95,6 +100,84 @@
     return false;
   }
 
+  // Absent, or not an array, means the product has one price. An empty list is a
+  // product whose dates are not for sale.
+  function datePriceTiers(item) {
+    return item && Array.isArray(item.datePrices) ? item.datePrices : null;
+  }
+
+  function tierCovers(tier, iso) {
+    var ranges = tier && Array.isArray(tier.ranges) ? tier.ranges : [];
+    for (var i = 0; i < ranges.length; i += 1) {
+      var span = ranges[i];
+      if (!Array.isArray(span) || span.length < 2) continue;
+      if (iso >= span[0] && iso <= span[1]) return true;
+    }
+    return false;
+  }
+
+  // The tier that actually sells this date. A tier with an empty payment link
+  // does not sell its dates, and the product's own paymentLink is not a fallback.
+  function tierForDate(item, iso) {
+    var tiers = datePriceTiers(item);
+    if (!tiers || !ISO_DATE.test(iso || "")) return null;
+    for (var i = 0; i < tiers.length; i += 1) {
+      if (tierCovers(tiers[i], iso) && PAYMENT_LINK.test(tiers[i].paymentLink || "")) return tiers[i];
+    }
+    return null;
+  }
+
+  function priceAmount(label) {
+    var match = String(label || "").match(/(\d+\.\d{2})/);
+    return match ? Number(match[1]) : Infinity;
+  }
+
+  function lowestTierLabel(item) {
+    var tiers = datePriceTiers(item);
+    if (!tiers) return "";
+    var best = "";
+    var bestAmount = Infinity;
+    for (var i = 0; i < tiers.length; i += 1) {
+      var amount = priceAmount(tiers[i].priceLabel);
+      if (amount < bestAmount) {
+        bestAmount = amount;
+        best = tiers[i].priceLabel || "";
+      }
+    }
+    return best;
+  }
+
+  function tierHasSelectableDay(item, tier) {
+    if (!tier || !PAYMENT_LINK.test(tier.paymentLink || "")) return false;
+    var range = dateWindow(item);
+    if (!ISO_DATE.test(range.min) || !ISO_DATE.test(range.max) || range.min > range.max) return false;
+    var cursor = range.min;
+    var guard = 0;
+    while (cursor <= range.max && guard < 400) {
+      if (tierCovers(tier, cursor) && !isClosedWeekday(item, cursor) && !isClosedDate(item, cursor)) return true;
+      cursor = addDays(cursor, 1);
+      guard += 1;
+    }
+    return false;
+  }
+
+  // Lowest tier that still has a day the guest can choose in the current window.
+  function lowestOpenTierLabel(item) {
+    var tiers = datePriceTiers(item);
+    if (!tiers) return "";
+    var best = "";
+    var bestAmount = Infinity;
+    for (var i = 0; i < tiers.length; i += 1) {
+      if (!tierHasSelectableDay(item, tiers[i])) continue;
+      var amount = priceAmount(tiers[i].priceLabel);
+      if (amount < bestAmount) {
+        bestAmount = amount;
+        best = tiers[i].priceLabel || "";
+      }
+    }
+    return best;
+  }
+
   function validDate(item, value) {
     if (!ISO_DATE.test(value || "")) return false;
     var parsed = new Date(value + "T00:00:00Z");
@@ -102,7 +185,9 @@
     if (isClosedWeekday(item, value)) return false;
     if (isClosedDate(item, value)) return false;
     var range = dateWindow(item);
-    return value >= range.min && value <= range.max;
+    if (value < range.min || value > range.max) return false;
+    if (datePriceTiers(item) && !tierForDate(item, value)) return false;
+    return true;
   }
 
   function ticket(item, code) {
@@ -125,9 +210,16 @@
     return code + "_" + date.replace(/-/g, "") + "_" + ticketCode;
   }
 
-  function paymentHref(item, reference) {
+  function paymentHref(item, reference, visitDate) {
     if (!bookable(item)) return null;
-    return item.paymentLink + "?client_reference_id=" + encodeURIComponent(reference) + "&locale=en";
+    var link = item.paymentLink;
+    if (datePriceTiers(item)) {
+      var tier = tierForDate(item, visitDate);
+      if (!tier) return null;
+      link = tier.paymentLink;
+    }
+    if (!PAYMENT_LINK.test(link || "")) return null;
+    return link + "?client_reference_id=" + encodeURIComponent(reference) + "&locale=en";
   }
 
   function setText(root, name, value) {
@@ -161,7 +253,16 @@
   function cards() {
     var nodes = document.querySelectorAll("[data-shop-card]");
     for (var i = 0; i < nodes.length; i += 1) {
-      if (!bookable(product(nodes[i].getAttribute("data-shop-card")))) nodes[i].remove();
+      var cardItem = product(nodes[i].getAttribute("data-shop-card"));
+      if (!bookable(cardItem)) {
+        nodes[i].remove();
+        continue;
+      }
+      if (datePriceTiers(cardItem)) {
+        var openLabel = lowestOpenTierLabel(cardItem);
+        var priceNode = nodes[i].querySelector(".shop-card-price");
+        if (priceNode && openLabel) priceNode.textContent = "From " + openLabel;
+      }
     }
     var blocks = document.querySelectorAll("[data-shop-products]");
     for (var j = 0; j < blocks.length; j += 1) {
@@ -190,6 +291,25 @@
     date.disabled = false;
     select.disabled = false;
     submit.disabled = false;
+    function paintVisitPrice() {
+      if (!datePriceTiers(item)) return;
+      var tier = validDate(item, date.value) ? tierForDate(item, date.value) : null;
+      var shown = tier ? tier.priceLabel : ("From " + lowestTierLabel(item));
+      var lede = document.querySelector("p.shop-lede");
+      if (lede) lede.textContent = shown;
+      var terms = document.querySelectorAll("dt");
+      for (var i = 0; i < terms.length; i += 1) {
+        if (terms[i].textContent === "Price" && terms[i].nextElementSibling) {
+          terms[i].nextElementSibling.textContent = shown;
+        }
+      }
+      var options = select.querySelectorAll("option");
+      for (var j = 0; j < options.length; j += 1) {
+        var text = options[j].textContent;
+        var cut = text.lastIndexOf(" · ");
+        if (cut >= 0) options[j].textContent = text.slice(0, cut) + " · " + shown;
+      }
+    }
     function showDateError() {
       var closed = isClosedWeekday(item, date.value);
       var blocked = isClosedDate(item, date.value);
@@ -201,11 +321,16 @@
       // Products that set neither are unchanged.
       var hasWeekdays = item.closedWeekdays && item.closedWeekdays.length;
       var hasDates = item.closedDates && item.closedDates.length;
-      if (hasWeekdays || hasDates) submit.disabled = (hasWeekdays && closed) || (hasDates && blocked);
-      return closed || blocked;
+      var untiered = Boolean(datePriceTiers(item) && ISO_DATE.test(date.value || "") && !tierForDate(item, date.value) && !closed && !blocked);
+      if (hasWeekdays || hasDates) submit.disabled = (hasWeekdays && closed) || (hasDates && blocked) || untiered;
+      else if (datePriceTiers(item)) submit.disabled = untiered;
+      if (untiered && error) error.hidden = false;
+      paintVisitPrice();
+      return closed || blocked || untiered;
     }
     date.addEventListener("input", showDateError);
     date.addEventListener("change", showDateError);
+    if (datePriceTiers(item)) showDateError();
     form.addEventListener("submit", function (event) {
       var closed = showDateError();
       if (closed || !validDate(item, date.value) || !ticket(item, select.value)) {
@@ -246,12 +371,13 @@
     setText(root, "location", item.location);
     setText(root, "date", longDate(date));
     setText(root, "ticket", chosen.label);
-    setText(root, "price", chosen.priceLabel);
+    var dayTier = datePriceTiers(item) ? tierForDate(item, date) : null;
+    setText(root, "price", dayTier ? dayTier.priceLabel : chosen.priceLabel);
     setText(root, "cancellation", item.cancellation);
     setText(root, "payment", item.payment);
     setList(root, "nextSteps", item.reviewNextSteps);
     backLinks(root, item);
-    var href = paymentHref(item, referenceId(code, date, chosen.code));
+    var href = paymentHref(item, referenceId(code, date, chosen.code), date);
     if (href) {
       pay.setAttribute("href", href);
       pay.removeAttribute("aria-disabled");
