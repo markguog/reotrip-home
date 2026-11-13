@@ -137,3 +137,13 @@ Copied unchanged from `REOTRIP-SHOP-NEXT-1-20261113T025936Z`. Alt text is the pr
 | tokyojoypolis | tokyojoypolis-card.jpg | 800 | 527 | Tokyo Joypolis 1-Day Passport | 随该商品存的图片 |
 | shanghaizoo | shanghaizoo-card.jpg | 800 | 507 | Shanghai Zoo Admission Ticket | 随该商品存的图片 |
 | beijingcentraltvtower | beijingcentraltvtower-card.jpg | 800 | 444 | Beijing Central Radio and TV Tower Ticket | 随该商品存的图片 |
+
+## CW2-689 batch 2 card images
+
+The files were copied as given. They were not resized again. Alt text is the product name.
+
+| code | file | width | height | alt | credit |
+| --- | --- | --- | --- | --- | --- |
+| tokyodisneyseaonly | tokyodisneyseaonly-card.jpg | 800 | 533 | Tokyo DisneySea Admission Ticket | 随该商品存的图片 |
+| hkpalacemuseum | hkpalacemuseum-card.jpg | 800 | 600 | Hong Kong Palace Museum Galleries 1-7 Ticket | 随该商品存的图片 |
+| shanghaiglassmuseum | shanghaiglassmuseum-card.jpg | 800 | 519 | Shanghai Suspended Glass Art Museum Ticket | 随该商品存的图片 |

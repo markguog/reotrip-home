@@ -1085,6 +1085,144 @@ window.REOTRIP_SHOP = {
         "Only tower admission is established; do not expand the package scope.",
       ],
       paymentLink: "https://buy.stripe.com/5kQ14ofAO5VudH53Pxgfu0J"
+    },
+    tokyodisneyseaonly: {
+      name: "Tokyo DisneySea Admission Ticket",
+      path: "en/tokyo/tokyo-disneysea-admission-ticket/",
+      location: "Tokyo, Japan",
+      priceLabel: "HKD 1010.00",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 1010.00" }],
+      cancellation: "All sales are final; no refunds.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: [],
+      datePrices: [
+        {
+          priceLabel: "HKD 1010.00",
+          paymentLink: "https://buy.stripe.com/eVqcN674i4Rq46vfyfgfu0L",
+          ranges: [["2026-11-17", "2027-11-02"]]
+        },
+        {
+          priceLabel: "HKD 1010.00",
+          paymentLink: "https://buy.stripe.com/cNidRadsGes05azdq7gfu0M",
+          ranges: [["2027-11-03", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "All sales are final; no refunds.",
+        "This is the ticket-only option and does not include a Tokyo Subway Pass.",
+        "Scheduled booking time: 09:00.",
+        "The order is manually confirmed after payment; the voucher is sent after confirmation.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "All sales are final; no refunds.",
+        "This is the ticket-only option and does not include a Tokyo Subway Pass.",
+        "Scheduled booking time: 09:00.",
+        "The order is manually confirmed after payment; the voucher is sent after confirmation.",
+      ],
+      paymentLink: "https://buy.stripe.com/eVqcN674i4Rq46vfyfgfu0L"
+    },
+    hkpalacemuseum: {
+      name: "Hong Kong Palace Museum Galleries 1-7 Ticket",
+      path: "en/hong-kong/hong-kong-palace-museum-galleries-1-7-ticket/",
+      location: "Hong Kong",
+      priceLabel: "HKD 78.09",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 78.09" }],
+      cancellation: "No cancellations, refunds, or changes.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Hong_Kong",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: ["Tuesday"],
+      closedDates: ["2026-11-30", "2026-12-01"],
+      datePrices: [
+        {
+          priceLabel: "HKD 78.09",
+          paymentLink: "https://buy.stripe.com/6oU4gAbkyfw40Ujfyfgfu0N",
+          ranges: [["2026-11-18", "2026-11-23"], ["2026-11-25", "2026-11-29"], ["2026-12-02", "2026-12-07"], ["2026-12-09", "2026-12-14"], ["2026-12-16", "2026-12-21"], ["2026-12-23", "2026-12-28"], ["2026-12-30", "2026-12-31"]]
+        },
+        {
+          priceLabel: "HKD 93.71",
+          paymentLink: "https://buy.stripe.com/00w8wQagu3Nm7iHdq7gfu0O",
+          ranges: [["2027-01-01", "2027-01-04"], ["2027-01-06", "2027-01-11"], ["2027-01-13", "2027-01-18"], ["2027-01-20", "2027-01-25"], ["2027-01-27", "2027-02-01"], ["2027-02-03", "2027-02-08"], ["2027-02-10", "2027-02-15"], ["2027-02-17", "2027-02-22"], ["2027-02-24", "2027-03-01"], ["2027-03-03", "2027-03-08"], ["2027-03-10", "2027-03-15"], ["2027-03-17", "2027-03-22"], ["2027-03-24", "2027-03-29"], ["2027-03-31", "2027-04-05"], ["2027-04-07", "2027-04-12"], ["2027-04-14", "2027-04-19"], ["2027-04-21", "2027-04-26"], ["2027-04-28", "2027-05-03"], ["2027-05-05", "2027-05-10"], ["2027-05-12", "2027-05-17"], ["2027-05-19", "2027-05-24"], ["2027-05-26", "2027-05-31"], ["2027-06-02", "2027-06-07"], ["2027-06-09", "2027-06-14"], ["2027-06-16", "2027-06-21"], ["2027-06-23", "2027-06-28"], ["2027-06-30", "2027-07-05"], ["2027-07-07", "2027-07-12"], ["2027-07-14", "2027-07-19"], ["2027-07-21", "2027-07-26"], ["2027-07-28", "2027-08-02"], ["2027-08-04", "2027-08-09"], ["2027-08-11", "2027-08-16"], ["2027-08-18", "2027-08-23"], ["2027-08-25", "2027-08-30"], ["2027-09-01", "2027-09-06"], ["2027-09-08", "2027-09-13"], ["2027-09-15", "2027-09-20"], ["2027-09-22", "2027-09-27"], ["2027-09-29", "2027-10-04"], ["2027-10-06", "2027-10-11"], ["2027-10-13", "2027-10-18"], ["2027-10-20", "2027-10-25"], ["2027-10-27", "2027-11-01"], ["2027-11-03", "2027-11-08"], ["2027-11-10", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "No cancellations, refunds, or changes.",
+        "This fixed-date ticket covers galleries 1-7 only.",
+        "Scheduled booking time: 10:00.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "No cancellations, refunds, or changes.",
+        "This fixed-date ticket covers galleries 1-7 only.",
+        "Scheduled booking time: 10:00.",
+      ],
+      paymentLink: "https://buy.stripe.com/6oU4gAbkyfw40Ujfyfgfu0N"
+    },
+    shanghaiglassmuseum: {
+      name: "Shanghai Suspended Glass Art Museum Ticket",
+      path: "en/shanghai/shanghai-suspended-glass-art-museum-ticket/",
+      location: "Shanghai, China",
+      priceLabel: "HKD 64.29",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 64.29" }],
+      cancellation: "Full refund if canceled at least 24 hours before the activity date, in destination local time.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: ["2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20", "2026-11-21", "2026-11-22", "2026-11-23", "2026-11-24", "2026-11-25", "2026-11-26", "2026-11-27", "2026-11-28", "2026-11-29", "2026-11-30", "2027-01-01", "2027-01-02", "2027-01-03"],
+      datePrices: [
+        {
+          priceLabel: "HKD 64.29",
+          paymentLink: "https://buy.stripe.com/eVqfZi4Wa97GdH599Rgfu0P",
+          ranges: [["2026-12-01", "2026-12-31"], ["2027-01-04", "2027-01-31"]]
+        },
+        {
+          priceLabel: "HKD 77.15",
+          paymentLink: "https://buy.stripe.com/14AeVe9cqcjS9qP5XFgfu0Q",
+          ranges: [["2027-02-01", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "Full refund if canceled at least 24 hours before the activity date, in destination local time.",
+        "The cancellation deadline uses destination local time.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Follow the admission instructions on your voucher.",
+        "Your booking is for your selected date.",
+        "Full refund if canceled at least 24 hours before the activity date, in destination local time.",
+        "The cancellation deadline uses destination local time.",
+      ],
+      paymentLink: "https://buy.stripe.com/eVqfZi4Wa97GdH599Rgfu0P"
     }
   }
 };
