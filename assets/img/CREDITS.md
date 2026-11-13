@@ -17,6 +17,12 @@ These files are the photographs shipped on the homepage. Neither license require
 | aberdeen-harbour-800.jpg | 800×600 | 114638 | https://www.pexels.com/photo/scenic-view-of-aberdeen-harbour-with-skyscrapers-38318492/ | PREETYGUYFABIO678 | Pexels License | 2026-11-12T10:09:36Z | 6e0db460316fcefd99303a6a6a964810359eba446a4a78e34d686b491b60ff0c |
 | hk-harbour-800.jpg | 800×413 | 81213 | https://www.pexels.com/photo/hong-kong-victoria-harbour-skyline-view-35262294/ | Kirandeep Singh Walia | Pexels License | 2026-11-12T09:59:57Z | 7d15f630b3f9a94330707e09eaf68e3838d213b235621e39a18b0a6e441771ae |
 | hcmc-landmark81-800.jpg | 800×1200 | 119049 | https://www.pexels.com/photo/landmark-81-in-ho-chi-minh-16551415/ | Phi Long | Pexels License | 2026-11-12T10:46:20Z | 5300aaa64365baf1580ad822c11d819bc51a8f0d5e940ae5859b899b5c643c50 |
+| osaka-umeda-sky.jpg | 720×480 | 99222 | 随该商品提供的官方图片 | — | 随该商品提供的官方图片 | 2026-11-12T11:43:30Z | c5506bfa8f5be2b2aac988ca023e7fe09dbe1f118a0172ec2d28450ea91307ef |
+| hongkongobservationwheel-card.jpg | 800×357 | 101746 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | 47bc1ad14a1d31ff57ecf805284370ffb1512d12b0a1b917ace9affbc71cc328 |
+| templeofheaven-card.jpg | 800×534 | 105833 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | cacb07e480fbf84cdfb0065778c6688f32cc05927d89beb1ebfc04d1b5e304f1 |
+| beijingglassmuseum-card.jpg | 800×619 | 118447 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | 739133afc6c99461f0f97eaadaf771ff0f2607149c9b52242d389d6ce5464878 |
+| shanghai-bund-800.jpg | 800×1202 | 116318 | https://www.pexels.com/photo/iconic-view-of-the-bund-in-shanghai-at-daytime-30310118/ | wang jun | Pexels License | 2026-11-12T11:43:38Z | 1fd931cf302c7c3b24bedde134c419d6e0ef6973dcc807c3b82462f91476f208 |
+| legendaryjapan-card.jpg | 800×533 | 106802 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
 
 License text read on the source pages:
 
@@ -53,6 +59,17 @@ Added 2026-11-12 for four more cards. The license page was read again the same d
 Added 2026-11-12 for the Landmark 81 card. The Pexels license page was read again the same day. The photo page labels the picture "Free", names Phi Long, and lists 4672×7008. The page title is "Landmark 81 in Ho Chi Minh".
 
 - hcmc-landmark81-800.jpg is the Landmark 81 tower exterior at night in Ho Chi Minh City, seen across the river, with neighboring residential towers. It is that building. It is not Bitexco Financial Tower, not a palace, not a museum, not a show, not a mascot, not a logo, and not a face close-up. Boats at the river edge are distant.
+
+Added 2026-11-12 for six more cards.
+
+- osaka-umeda-sky.jpg is the Umeda Sky Building at night, including the circular opening of the observatory. 随该商品提供的官方图片. File id a0df3a126393-1. The shipped file is a JPEG of that image at the source size 720×480. It was not enlarged. SHA256 above is of the shipped JPEG.
+- hongkongobservationwheel-card.jpg, templeofheaven-card.jpg, beijingglassmuseum-card.jpg, and legendaryjapan-card.jpg are each that product's own picture. 随该商品由接口提供的图片. The files were copied as given. They were not resized. SHA256 above is of each shipped JPEG. Alt text: Hong Kong Observation Wheel; Temple of Heaven, Beijing; Beijing Suspended Glass Art Museum; Legendary Japan Show.
+- shanghai-bund-800.jpg is historic buildings on the Bund in Shanghai in daytime (page title: Iconic View of The Bund in Shanghai at Daytime; page location: Shanghai). The Pexels license page quoted above was read the same day. The photo page labels the picture "Free" and links to that license. It is a Shanghai city scene. It is not Yu Garden and not Happy Valley. No face close-up. This card uses the stock photograph because that product's own picture was not in the image drop.
+
+Originals, not shipped, for the official image and the stock card:
+
+- umeda-a0df3a126393-1.avif sha256 7600742fc11ec2a77fe0244ffe5da25e2d63f636ee59bfa71dd102941b640bb3, 720×480, 97864 bytes.
+- shanghai-bund-original.jpg sha256 cd52b10045028b020c23b4105602bbea5b1d2d7c6cfe64a433907094571f083e, 4024×6048, 2442651 bytes.
 
 Added 2026-11-12 for seven direct tickets. Each file below is an official image supplied with that product. The page column is the file id in the product's page facts. The author is not a person's name. The SHA256 column is the JPEG in this directory. The source SHA256 is the official file named by that file id, checked against the download.
 
