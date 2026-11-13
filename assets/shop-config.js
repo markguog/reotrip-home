@@ -165,7 +165,7 @@ window.REOTRIP_SHOP = {
         },
         {
           priceLabel: "HKD 59.90",
-          paymentLink: "",
+          paymentLink: "https://buy.stripe.com/28E00kagufw45azdq7gfu0y",
           ranges: [["2027-02-04", "2027-11-12"]]
         }
       ],
@@ -272,7 +272,7 @@ window.REOTRIP_SHOP = {
         },
         {
           priceLabel: "HKD 667.92",
-          paymentLink: "",
+          paymentLink: "https://buy.stripe.com/5kQ14o60egA8dH5dq7gfu0w",
           ranges: [["2027-01-01", "2027-11-12"]]
         }
       ],
@@ -308,7 +308,7 @@ window.REOTRIP_SHOP = {
         },
         {
           priceLabel: "HKD 284.28",
-          paymentLink: "",
+          paymentLink: "https://buy.stripe.com/dRmbJ2coC0Ba5azbhZgfu0x",
           ranges: [["2027-02-04", "2027-11-12"]]
         }
       ],
@@ -360,9 +360,20 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Tokyo",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-02-02",
+      lastDate: "2027-11-12",
       closedDates: [
         "2027-01-01"
+      ],
+      datePrices: [
+        {
+          priceLabel: "HKD 121.00",
+          paymentLink: "https://buy.stripe.com/dRm7sM1JYabK9qPfyfgfu0m",
+          ranges: [
+            ["2026-11-17", "2026-12-31"],
+            ["2027-01-02", "2027-02-02"],
+            ["2027-02-03", "2027-11-12"]
+          ]
+        }
       ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
@@ -389,7 +400,19 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Hong_Kong",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-01-20",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 22.54",
+          paymentLink: "https://buy.stripe.com/8x2bJ2coCabKfPd85Ngfu0n",
+          ranges: [["2026-11-17", "2027-01-20"]]
+        },
+        {
+          priceLabel: "HKD 27.05",
+          paymentLink: "https://buy.stripe.com/8x27sMagu83C7iHgCjgfu0z",
+          ranges: [["2027-01-21", "2027-11-12"]]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "A mobile voucher is emailed by order@reotrip.com. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
@@ -413,9 +436,75 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Shanghai",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-01-03",
+      lastDate: "2027-11-12",
       closedWeekdays: [
         "Monday"
+      ],
+      datePrices: [
+        {
+          priceLabel: "HKD 94.53",
+          paymentLink: "https://buy.stripe.com/4gM5kE9cq0BabyXadVgfu0o",
+          ranges: [
+            ["2026-11-17", "2026-11-22"],
+            ["2026-11-24", "2026-11-29"],
+            ["2026-12-01", "2026-12-06"],
+            ["2026-12-08", "2026-12-13"],
+            ["2026-12-15", "2026-12-20"],
+            ["2026-12-22", "2026-12-27"],
+            ["2026-12-29", "2027-01-03"]
+          ]
+        },
+        {
+          priceLabel: "HKD 113.44",
+          paymentLink: "https://buy.stripe.com/eVq5kE2O25Vu9qP0Dlgfu0A",
+          ranges: [
+            ["2027-01-05", "2027-01-10"],
+            ["2027-01-12", "2027-01-17"],
+            ["2027-01-19", "2027-01-24"],
+            ["2027-01-26", "2027-01-31"],
+            ["2027-02-02", "2027-02-07"],
+            ["2027-02-09", "2027-02-14"],
+            ["2027-02-16", "2027-02-21"],
+            ["2027-02-23", "2027-02-28"],
+            ["2027-03-02", "2027-03-07"],
+            ["2027-03-09", "2027-03-14"],
+            ["2027-03-16", "2027-03-21"],
+            ["2027-03-23", "2027-03-28"],
+            ["2027-03-30", "2027-04-04"],
+            ["2027-04-06", "2027-04-11"],
+            ["2027-04-13", "2027-04-18"],
+            ["2027-04-20", "2027-04-25"],
+            ["2027-04-27", "2027-05-02"],
+            ["2027-05-04", "2027-05-09"],
+            ["2027-05-11", "2027-05-16"],
+            ["2027-05-18", "2027-05-23"],
+            ["2027-05-25", "2027-05-30"],
+            ["2027-06-01", "2027-06-06"],
+            ["2027-06-08", "2027-06-13"],
+            ["2027-06-15", "2027-06-20"],
+            ["2027-06-22", "2027-06-27"],
+            ["2027-06-29", "2027-07-04"],
+            ["2027-07-06", "2027-07-11"],
+            ["2027-07-13", "2027-07-18"],
+            ["2027-07-20", "2027-07-25"],
+            ["2027-07-27", "2027-08-01"],
+            ["2027-08-03", "2027-08-08"],
+            ["2027-08-10", "2027-08-15"],
+            ["2027-08-17", "2027-08-22"],
+            ["2027-08-24", "2027-08-29"],
+            ["2027-08-31", "2027-09-05"],
+            ["2027-09-07", "2027-09-12"],
+            ["2027-09-14", "2027-09-19"],
+            ["2027-09-21", "2027-09-26"],
+            ["2027-09-28", "2027-10-03"],
+            ["2027-10-05", "2027-10-10"],
+            ["2027-10-12", "2027-10-17"],
+            ["2027-10-19", "2027-10-24"],
+            ["2027-10-26", "2027-10-31"],
+            ["2027-11-02", "2027-11-07"],
+            ["2027-11-09", "2027-11-12"]
+          ]
+        }
       ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
@@ -442,11 +531,26 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Shanghai",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-01-30",
+      lastDate: "2027-11-12",
       closedDates: [
         "2027-01-01",
         "2027-01-02",
         "2027-01-03"
+      ],
+      datePrices: [
+        {
+          priceLabel: "HKD 64.17",
+          paymentLink: "https://buy.stripe.com/aFa6oIgESdnW0Uj0Dlgfu0p",
+          ranges: [
+            ["2026-11-17", "2026-12-31"],
+            ["2027-01-04", "2027-01-30"]
+          ]
+        },
+        {
+          priceLabel: "HKD 77.01",
+          paymentLink: "https://buy.stripe.com/bJe14o9cq97GeL90Dlgfu0B",
+          ranges: [["2027-01-31", "2027-11-12"]]
+        }
       ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
@@ -471,7 +575,19 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Shanghai",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-01-29",
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 236.79",
+          paymentLink: "https://buy.stripe.com/5kQ28s9cqfw46eD5XFgfu0q",
+          ranges: [["2026-11-17", "2027-01-29"]]
+        },
+        {
+          priceLabel: "HKD 284.15",
+          paymentLink: "https://buy.stripe.com/8x28wQ0FUgA81Yn4TBgfu0C",
+          ranges: [["2027-01-30", "2027-11-12"]]
+        }
+      ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
         "After payment, order@reotrip.com writes to confirm the name to use for the Qin Dynasty culture VR reservation. Check your spam folder.",
@@ -495,12 +611,27 @@ window.REOTRIP_SHOP = {
       timeZone: "Asia/Tokyo",
       minDaysAhead: 5,
       bookableDays: 60,
-      lastDate: "2027-01-28",
+      lastDate: "2027-11-12",
       closedDates: [
         "2026-12-28",
         "2026-12-29",
         "2026-12-30",
         "2026-12-31"
+      ],
+      datePrices: [
+        {
+          priceLabel: "HKD 693.91",
+          paymentLink: "https://buy.stripe.com/3cIaEY9cqbfOgTh4TBgfu0r",
+          ranges: [
+            ["2026-11-17", "2026-12-27"],
+            ["2027-01-01", "2027-01-28"]
+          ]
+        },
+        {
+          priceLabel: "HKD 832.70",
+          paymentLink: "https://buy.stripe.com/bJeeVefAO1FegTh5XFgfu0D",
+          ranges: [["2027-01-29", "2027-11-12"]]
+        }
       ],
       reviewNextSteps: [
         "After payment, we confirm your order by email.",
@@ -703,6 +834,44 @@ window.REOTRIP_SHOP = {
         "The boarding point is confirmed by email from order@reotrip.com before the visit."
       ],
       paymentLink: "https://buy.stripe.com/7sYbJ274i2Ji32rgCjgfu0l"
+    },
+    osakacastle: {
+      name: "Osaka Castle Keep and Toyotomi Stone Wall Museum Ticket",
+      path: "en/japan/osaka-castle-keep-and-toyotomi-stone-wall-museum-ticket/",
+      location: "Osaka, Japan",
+      priceLabel: "HKD 65.78",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 65.78" }],
+      cancellation: "This ticket cannot be cancelled and cannot be refunded. You cannot re-enter after you leave.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 28,
+      lastDate: "2027-11-12",
+      datePrices: [
+        {
+          priceLabel: "HKD 65.78",
+          paymentLink: "https://buy.stripe.com/28E3cw2O2es0eL9fyfgfu0u",
+          ranges: [["2026-11-17", "2026-12-01"]]
+        },
+        {
+          priceLabel: "HKD 78.94",
+          paymentLink: "https://buy.stripe.com/fZu5kE88m83C32rcm3gfu0v",
+          ranges: [["2026-12-02", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails the voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Enter directly with that voucher.",
+        "The ticket includes Osaka Castle keep and the Toyotomi Stone Wall Museum. Follow the expiry date printed on the ticket."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails the voucher to the address you gave at checkout. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Enter directly with that voucher.",
+        "The ticket includes Osaka Castle keep and the Toyotomi Stone Wall Museum. Follow the expiry date printed on the ticket."
+      ],
+      paymentLink: "https://buy.stripe.com/28E3cw2O2es0eL9fyfgfu0u"
     },
     jinmaotower: {
       name: "Jin Mao Tower Observation Deck Ticket",
