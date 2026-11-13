@@ -125,3 +125,15 @@ The following product-specific card images replace earlier card references where
 | legendaryjapan | legendaryjapan-card.jpg | Legendary Japan Show | 随该商品由接口提供的图片 | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
 
 `madametussaudshk` has no ready image in this package and retains its existing card image. `shanghaiqinvr` had no ready image in this package; a later drop supplied shanghaiqinvr-card.jpg, which is the card now shipped. `umedasky` is outside this package and retains its product-specific image.
+
+
+## CW2-673 batch 1 card images
+
+Copied unchanged from `REOTRIP-SHOP-NEXT-1-20261113T025936Z`. Alt text is the product name. Credit is copied from that batch's images.json.
+
+| Product code | File | Width | Height | Alt text | Credit |
+|---|---|---:|---:|---|---|
+| nifrel | nifrel-card.jpg | 800 | 533 | NIFREL Osaka Admission Ticket | 随该商品存的图片 |
+| tokyojoypolis | tokyojoypolis-card.jpg | 800 | 527 | Tokyo Joypolis 1-Day Passport | 随该商品存的图片 |
+| shanghaizoo | shanghaizoo-card.jpg | 800 | 507 | Shanghai Zoo Admission Ticket | 随该商品存的图片 |
+| beijingcentraltvtower | beijingcentraltvtower-card.jpg | 800 | 444 | Beijing Central Radio and TV Tower Ticket | 随该商品存的图片 |
