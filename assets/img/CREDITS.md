@@ -84,3 +84,26 @@ Added 2026-11-12 for seven direct tickets. Each file below is an official image 
 | danang-banahills-bus.jpg | 720×480 | 79057 | db5c5081b443-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | abe9e70e26257274d83fac4ea867361e5b82a7b227dc2c70d8a32742127adabb | c49d5df362d5c560453d388115142ee0390f92dd0c73a847570c0d51eab8bb4c |
 
 What these seven pictures show: the Beijing Labubu Pop Land building exterior; a night view down the Hong Kong Disneyland park street toward the castle; the Tokyo Disneyland entrance plaza and gate; the X the Sky tower group at night across the water; the Western-style stone ruins at the Old Summer Palace; an aerial view of the Ba Na Hills hilltop grounds; a wide view of the Ba Na Hills grounds. No text poster, no map, no price list, and no face close-up. The two Ba Na Hills pictures are different files.
+
+## CW2-653 product-image alignment
+
+The following product-specific card images replace earlier card references where needed. The original files and historical credit entries above are retained. Files are copied unchanged from the reviewed image package; alt text and credit are transcribed from its images.json. Source: reo-ops commit `272ad671fb662c2edbe0ca5f77c3e944bc2a9e32`, `_cowork/codex_artifacts/REOTRIP-SHOP-IMAGES-20261112T122122Z/`.
+
+| Product code | File | Alt text | Credit | SHA256 |
+|---|---|---|---|---|
+| harukas300 | harukas300-card.jpg | Harukas 300 | 随该商品由接口提供的图片 | b62bf1599d13b50aaecca6fec5cab6e7a011247f64887d74b9c3541f0a590e45 |
+| teamlabmacao | teamlabmacao-card.jpg | TeamLab SuperNature Macao | 随该商品由接口提供的图片 | 74e73a84c90d586497cb10a70562cfda710a99f4c7be20357df15ea22bd05c85 |
+| shanghaihappyvalley | shanghaihappyvalley-card.jpg | Shanghai Happy Valley | 随该商品由接口提供的图片 | 77c16762113f220859cbe46da9cfd4fc941b151a60b5648ac7b458a680b53b51 |
+| yugardenmorning | yugardenmorning-card.jpg | Yu Garden, Shanghai | 随该商品由接口提供的图片 | f39bb7d2523be65d2366f6ee11ba0bb87dc0a34d8ef02633a20e4fc850e04da8 |
+| keio1day | keio1day-card.jpg | Keio and Inokashira Lines | 随该商品由接口提供的图片 | 04bf3de9089c81878c7a1e6eecbfbf4dbe62cf631a1dbf389885d7f48709197e |
+| kyototower | kyototower-card.jpg | Kyoto Tower | 随该商品由接口提供的图片 | 5e86970100ce9a7d7e24ab7a01b128b7836e1bae1c37026eaba6ab899885ff69 |
+| seoulsky | seoulsky-card.jpg | Seoul Sky, Lotte World Tower | 随该商品由接口提供的图片 | f69f115d39894252183ff8b7593d7bcbdaaeacb41a40976f7377471ec615220c |
+| lotteworldsky | lotteworldsky-card.jpg | Lotte World and Seoul Sky | 随该商品由接口提供的图片 | e412e3b4bc2a8bd66c39d5b44a4121403620ad16d8fb9abed54855a9a3b96872 |
+| oceanparkhk | oceanparkhk-card.jpg | Ocean Park Hong Kong | 随该商品由接口提供的图片 | 76d36127b949f38f9e2976d20746fbb2bf8224308551cdecd25bcb4584c127f3 |
+| landmark81 | landmark81-card.jpg | Landmark 81 Saigon Skyview | 随该商品由接口提供的图片 | 3857ff0e18064bf8cf164ccb623d7bf37086bdd1ff7f93d5e7d453b4c8e8c9c1 |
+| hongkongobservationwheel | hongkongobservationwheel-card.jpg | Hong Kong Observation Wheel | 随该商品由接口提供的图片 | 47bc1ad14a1d31ff57ecf805284370ffb1512d12b0a1b917ace9affbc71cc328 |
+| templeofheaven | templeofheaven-card.jpg | Temple of Heaven, Beijing | 随该商品由接口提供的图片 | cacb07e480fbf84cdfb0065778c6688f32cc05927d89beb1ebfc04d1b5e304f1 |
+| beijingglassmuseum | beijingglassmuseum-card.jpg | Beijing Suspended Glass Art Museum | 随该商品由接口提供的图片 | 739133afc6c99461f0f97eaadaf771ff0f2607149c9b52242d389d6ce5464878 |
+| legendaryjapan | legendaryjapan-card.jpg | Legendary Japan Show | 随该商品由接口提供的图片 | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
+
+`madametussaudshk` and `shanghaiqinvr` have no ready image in this package and retain their existing card images. `umedasky` is outside this package and retains its product-specific image.
