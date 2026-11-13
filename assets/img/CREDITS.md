@@ -71,6 +71,19 @@ Originals, not shipped, for the official image and the stock card:
 - umeda-a0df3a126393-1.avif sha256 7600742fc11ec2a77fe0244ffe5da25e2d63f636ee59bfa71dd102941b640bb3, 720×480, 97864 bytes.
 - shanghai-bund-original.jpg sha256 cd52b10045028b020c23b4105602bbea5b1d2d7c6cfe64a433907094571f083e, 4024×6048, 2442651 bytes.
 
+Added 2026-11-12 for seven direct tickets. Each file below is an official image supplied with that product. The page column is the file id in the product's page facts. The author is not a person's name. The SHA256 column is the JPEG in this directory. The source SHA256 is the official file named by that file id, checked against the download.
+
+| File | Pixels | Bytes | File id | Author | License | Downloaded (UTC) | JPEG SHA256 | Source SHA256 |
+|---|---|---|---|---|---|---|---|---|
+| beijing-popland.jpg | 720×480 | 103867 | 18b4ef918567-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | 91735d8c552765ee2e6b94de9ea03d8128899bf67b67dd61061b83bc1b123516 | 5cd309e656777b4c8b1cfc7fad5737fdb3c6a5e20091df363f4f656ed82a5ebc |
+| hk-disneyland-early.jpg | 720×480 | 117316 | cd3aa747d195-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | c21778a05c60e6a8c4375635f866786453233c9acc3790a40e9d8ee5881a4764 | e111bc50247e54b3f12b1c32cfc7c914dd58a17dfa2818bcb291a6b7ac6ac771 |
+| tokyo-disneyland.jpg | 720×480 | 92367 | 63ac7b43e079-6 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | 671fbfc00b2caa5672bb303ac3b9778fd07983d3b5d208e6a8878dd9d52681d4 | 4ce08367ce6752fc0f5bf89badd0985e0b8c2e7c8e697d3cad4c5d4031a12ac5 |
+| busan-x-the-sky.jpg | 719×480 | 53567 | 2853f3676318-5 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | d428a7429998f67226da61ecb784d030405db1039dff3b4ef03894007d5f78eb | 1c13f06804681edf4ab16ff1b851c566ad99cdaf93a8f60a14c62df24d4f268a |
+| beijing-yuanmingyuan.jpg | 720×480 | 108768 | ba0f8b00be8c-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | 7296740529d37bf890ddc1b51e95c5f1feae33dd02f6569006554c70f7f25474 | b2b26c7eb137e697bda9dc775cd57ea962b59402eb6e980b4b123f8252095b5b |
+| danang-banahills-coaster.jpg | 720×480 | 84611 | ee7a66cede1e-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | a5315799e2794ec06d884bd947287e246208cecdadf3c63058039a2fd1ac9c24 | 6f88d1935acb80d0d6941a83534d1c1b768144f6d0573a8c823095ea729b0436 |
+| danang-banahills-bus.jpg | 720×480 | 79057 | db5c5081b443-1 | Official image supplied with the product | Official image supplied with the product | 2026-11-12 | abe9e70e26257274d83fac4ea867361e5b82a7b227dc2c70d8a32742127adabb | c49d5df362d5c560453d388115142ee0390f92dd0c73a847570c0d51eab8bb4c |
+
+What these seven pictures show: the Beijing Labubu Pop Land building exterior; a night view down the Hong Kong Disneyland park street toward the castle; the Tokyo Disneyland entrance plaza and gate; the X the Sky tower group at night across the water; the Western-style stone ruins at the Old Summer Palace; an aerial view of the Ba Na Hills hilltop grounds; a wide view of the Ba Na Hills grounds. No text poster, no map, no price list, and no face close-up. The two Ba Na Hills pictures are different files.
 
 ## CW2-653 product-image alignment
 
