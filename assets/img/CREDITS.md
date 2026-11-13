@@ -21,7 +21,9 @@ These files are the photographs shipped on the homepage. Neither license require
 | hongkongobservationwheel-card.jpg | 800×357 | 101746 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | 47bc1ad14a1d31ff57ecf805284370ffb1512d12b0a1b917ace9affbc71cc328 |
 | templeofheaven-card.jpg | 800×534 | 105833 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | cacb07e480fbf84cdfb0065778c6688f32cc05927d89beb1ebfc04d1b5e304f1 |
 | beijingglassmuseum-card.jpg | 800×619 | 118447 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | 739133afc6c99461f0f97eaadaf771ff0f2607149c9b52242d389d6ce5464878 |
-| shanghai-bund-800.jpg | 800×1202 | 116318 | https://www.pexels.com/photo/iconic-view-of-the-bund-in-shanghai-at-daytime-30310118/ | wang jun | Pexels License | 2026-11-12T11:43:38Z | 1fd931cf302c7c3b24bedde134c419d6e0ef6973dcc807c3b82462f91476f208 |
+| shanghaiqinvr-card.jpg | 800×458 | 71966 | 随该商品存的图片 | — | 随该商品存的图片 | 2026-11-13T01:21:04Z | 7ab74425add01b0148be853e00d1d36e65b8bc5a7ed2af18e905e70dfb3e9720 |
+| shanghai-jinmao-tower.jpg | 720×480 | 218039 | 随该商品提供的官方图片 | — | 随该商品提供的官方图片 | 2026-11-13T01:18:44Z | 965214b09603b39d496ea3105de5afe8122db0305e252a8484a275642113eadd |
+| shuiguan-card.jpg | 800×442 | 111510 | 随该商品存的图片 | — | 随该商品存的图片 | 2026-11-13T01:21:04Z | d507316502f9f4d2274cb939a90a593ee5ac10fa97fc8d20a9c9768c2830198e |
 | legendaryjapan-card.jpg | 800×533 | 106802 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
 
 License text read on the source pages:
@@ -64,12 +66,23 @@ Added 2026-11-12 for six more cards.
 
 - osaka-umeda-sky.jpg is the Umeda Sky Building at night, including the circular opening of the observatory. 随该商品提供的官方图片. File id a0df3a126393-1. The shipped file is a JPEG of that image at the source size 720×480. It was not enlarged. SHA256 above is of the shipped JPEG.
 - hongkongobservationwheel-card.jpg, templeofheaven-card.jpg, beijingglassmuseum-card.jpg, and legendaryjapan-card.jpg are each that product's own picture. 随该商品由接口提供的图片. The files were copied as given. They were not resized. SHA256 above is of each shipped JPEG. Alt text: Hong Kong Observation Wheel; Temple of Heaven, Beijing; Beijing Suspended Glass Art Museum; Legendary Japan Show.
-- shanghai-bund-800.jpg is historic buildings on the Bund in Shanghai in daytime (page title: Iconic View of The Bund in Shanghai at Daytime; page location: Shanghai). The Pexels license page quoted above was read the same day. The photo page labels the picture "Free" and links to that license. It is a Shanghai city scene. It is not Yu Garden and not Happy Valley. No face close-up. This card uses the stock photograph because that product's own picture was not in the image drop.
+- shanghaiqinvr-card.jpg is that product's own picture. 随该商品存的图片. Alt text: Shanghai Qin Dynasty Culture VR Experience. The file was copied as given. It was not resized. SHA256 above is of the shipped JPEG. It replaces the earlier stock photograph. The stock file is no longer shipped.
 
-Originals, not shipped, for the official image and the stock card:
+Original, not shipped, for the Umeda official image:
 
 - umeda-a0df3a126393-1.avif sha256 7600742fc11ec2a77fe0244ffe5da25e2d63f636ee59bfa71dd102941b640bb3, 720×480, 97864 bytes.
-- shanghai-bund-original.jpg sha256 cd52b10045028b020c23b4105602bbea5b1d2d7c6cfe64a433907094571f083e, 4024×6048, 2442651 bytes.
+
+Added 2026-11-13 for the Jin Mao Tower card.
+
+- shanghai-jinmao-tower.jpg is the Jin Mao Tower at dusk, with the tower spire in the foreground and the view beyond it. 随该商品提供的官方图片. File id 8395d5e40ea3-1. The shipped file is a JPEG of that image at the source size 720×480. It was not enlarged. SHA256 above is of the shipped JPEG.
+
+Original, not shipped:
+
+- jinmao-8395d5e40ea3-1.avif sha256 93db661758c9cc47f98671ed53d6fe74425b1b60ef92ceda72070f43f0259c79, 720×480, 135455 bytes.
+
+Added 2026-11-13 for the Shuiguan card.
+
+- shuiguan-card.jpg is that product's own picture. 随该商品存的图片. Alt text: Shuiguan Great Wall, Beijing. The file was copied as given. It was not resized. SHA256 above is of the shipped JPEG.
 
 Added 2026-11-12 for seven direct tickets. Each file below is an official image supplied with that product. The page column is the file id in the product's page facts. The author is not a person's name. The SHA256 column is the JPEG in this directory. The source SHA256 is the official file named by that file id, checked against the download.
 
@@ -106,4 +119,4 @@ The following product-specific card images replace earlier card references where
 | beijingglassmuseum | beijingglassmuseum-card.jpg | Beijing Suspended Glass Art Museum | 随该商品由接口提供的图片 | 739133afc6c99461f0f97eaadaf771ff0f2607149c9b52242d389d6ce5464878 |
 | legendaryjapan | legendaryjapan-card.jpg | Legendary Japan Show | 随该商品由接口提供的图片 | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
 
-`madametussaudshk` and `shanghaiqinvr` have no ready image in this package and retain their existing card images. `umedasky` is outside this package and retains its product-specific image.
+`madametussaudshk` has no ready image in this package and retains its existing card image. `shanghaiqinvr` had no ready image in this package; a later drop supplied shanghaiqinvr-card.jpg, which is the card now shipped. `umedasky` is outside this package and retains its product-specific image.
