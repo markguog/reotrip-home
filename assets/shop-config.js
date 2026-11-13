@@ -923,6 +923,168 @@ window.REOTRIP_SHOP = {
         "This admission is valid on the visit date you select. Mondays are not available for this ticket."
       ],
       paymentLink: "https://buy.stripe.com/00wfZi60e83C32r99Rgfu0t"
+    },
+    nifrel: {
+      name: "NIFREL Osaka Admission Ticket",
+      path: "en/osaka/nifrel-osaka-admission-ticket/",
+      location: "Osaka, Japan",
+      priceLabel: "HKD 161.88",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 161.88" }],
+      cancellation: "The ticket is non-refundable and cannot be changed.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: [],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Present the voucher for direct entry.",
+        "The voucher is valid for 120 days from booking confirmation and expires at 23:59 on the final day.",
+        "The ticket is non-refundable and cannot be changed.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Present the voucher for direct entry.",
+        "The voucher is valid for 120 days from booking confirmation and expires at 23:59 on the final day.",
+        "The ticket is non-refundable and cannot be changed.",
+      ],
+      paymentLink: "https://buy.stripe.com/9B6eVe0FUes0gTh3Pxgfu0E"
+    },
+    tokyojoypolis: {
+      name: "Tokyo Joypolis 1-Day Passport",
+      path: "en/tokyo/tokyo-joypolis-one-day-passport/",
+      location: "Tokyo, Japan",
+      priceLabel: "HKD 182.85",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 182.85" }],
+      cancellation: "A full refund is available only before voucher redemption.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Tokyo",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: [],
+      datePrices: [
+        {
+          priceLabel: "HKD 182.85",
+          paymentLink: "https://buy.stripe.com/9B6eVe88m4Rq0Ujcm3gfu0F",
+          ranges: [["2026-11-17", "2027-01-31"]]
+        },
+        {
+          priceLabel: "HKD 219.42",
+          paymentLink: "https://buy.stripe.com/bJecN64Wa6ZybyXadVgfu0G",
+          ranges: [["2027-02-01", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The Adult category is for age 18 and above.",
+        "Staff must handle voucher redemption and physical-ticket exchange; do not operate the voucher before arrival.",
+        "Some attractions or items cost extra.",
+        "A full refund is available only before voucher redemption.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The Adult category is for age 18 and above.",
+        "Staff must handle voucher redemption and physical-ticket exchange; do not operate the voucher before arrival.",
+        "Some attractions or items cost extra.",
+        "A full refund is available only before voucher redemption.",
+      ],
+      paymentLink: "https://buy.stripe.com/9B6eVe88m4Rq0Ujcm3gfu0F"
+    },
+    shanghaizoo: {
+      name: "Shanghai Zoo Admission Ticket",
+      path: "en/shanghai/shanghai-zoo-admission-ticket/",
+      location: "Shanghai, China",
+      priceLabel: "HKD 61.64",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 61.64" }],
+      cancellation: "Changes require cancellation and rebooking; partial refunds are not available.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: [],
+      datePrices: [
+        {
+          priceLabel: "HKD 61.64",
+          paymentLink: "https://buy.stripe.com/00wbJ288m0BadH585Ngfu0H",
+          ranges: [["2026-11-17", "2026-12-31"]]
+        },
+        {
+          priceLabel: "HKD 73.97",
+          paymentLink: "https://buy.stripe.com/28E14oewK4Rq8mL1Hpgfu0I",
+          ranges: [["2027-01-01", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The Adult category requires a height of at least 130 cm.",
+        "Confirmation may take up to 48 hours and is not instant.",
+        "Opening hours are 08:00-18:30 from March through October and 08:00-16:30 from November through February.",
+        "Changes require cancellation and rebooking; partial refunds are not available.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The Adult category requires a height of at least 130 cm.",
+        "Confirmation may take up to 48 hours and is not instant.",
+        "Opening hours are 08:00-18:30 from March through October and 08:00-16:30 from November through February.",
+        "Changes require cancellation and rebooking; partial refunds are not available.",
+      ],
+      paymentLink: "https://buy.stripe.com/00wbJ288m0BadH585Ngfu0H"
+    },
+    beijingcentraltvtower: {
+      name: "Beijing Central Radio and TV Tower Ticket",
+      path: "en/beijing/central-radio-tv-tower-ticket/",
+      location: "Beijing, China",
+      priceLabel: "HKD 130.07",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 130.07" }],
+      cancellation: "The selected Admission Ticket is refundable before redemption.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: [],
+      closedDates: [],
+      datePrices: [
+        {
+          priceLabel: "HKD 130.07",
+          paymentLink: "https://buy.stripe.com/5kQ14ofAO5VudH53Pxgfu0J",
+          ranges: [["2026-11-17", "2026-12-11"]]
+        },
+        {
+          priceLabel: "HKD 156.09",
+          paymentLink: "https://buy.stripe.com/5kQdRabky6Zy0Uj85Ngfu0K",
+          ranges: [["2026-12-12", "2027-11-12"]]
+        }
+      ],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The selected Admission Ticket is refundable before redemption.",
+        "The exact Adult age range is not stated.",
+        "Confirmation may take up to 24 hours and is not instant.",
+        "Only tower admission is established; do not expand the package scope.",
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails your voucher. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "The selected Admission Ticket is refundable before redemption.",
+        "The exact Adult age range is not stated.",
+        "Confirmation may take up to 24 hours and is not instant.",
+        "Only tower admission is established; do not expand the package scope.",
+      ],
+      paymentLink: "https://buy.stripe.com/5kQ14ofAO5VudH53Pxgfu0J"
     }
   }
 };
