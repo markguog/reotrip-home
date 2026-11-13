@@ -74,6 +74,10 @@ main, .agencies-inner { width: min(1296px, calc(100% - 80px)); margin: 0 auto; }
 .shop-card::before { content: "BOOKABLE ONLINE"; position: absolute; z-index: 1; top: 10px; right: 10px; padding: 3px 8px 3px 18px; border-radius: 6px; color: var(--heading); background: #fff; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; font-weight: 500; line-height: 16px; white-space: nowrap; }
 .shop-card::after { content: ""; position: absolute; z-index: 2; top: 18px; right: 121px; width: 6px; height: 6px; border-radius: 50%; background: #34d399; pointer-events: none; }
 .shop-card-photo { display: block; width: 100%; height: 180px; object-fit: cover; background: #dde9f6; }
+/* Keep the supplied tower and wheel subjects visible inside existing card frames. */
+[data-shop-card="seoulsky"] .shop-card-photo,
+[data-shop-card="lotteworldsky"] .shop-card-photo,
+[data-shop-card="hongkongobservationwheel"] .shop-card-photo { object-fit: contain; }
 .shop-card-body { display: flex; flex: 1; flex-direction: column; gap: 6px; min-width: 0; padding: 14px; }
 .shop-card-name { display: block; color: var(--heading); font-size: 16px; line-height: 1.35; font-weight: 700; overflow-wrap: break-word; }
 .shop-card-meta { order: -1; color: var(--subtle); font-size: 13px; line-height: 1.5; }
@@ -309,4 +313,12 @@ main, .agencies-inner { width: min(1296px, calc(100% - 80px)); margin: 0 auto; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .shop-card { transition: none; }
+}
+
+/* Keep the desktop availability badge clear of the Seoul Sky and Landmark 81 tower crowns. */
+@media (min-width: 1101px) {
+  .shop-grid [data-shop-card="landmark81"]::before,
+  .shop-grid [data-shop-card="seoulsky"]::before { left: 10px; right: auto; }
+  .shop-grid [data-shop-card="landmark81"]::after,
+  .shop-grid [data-shop-card="seoulsky"]::after { left: 18px; right: auto; }
 }
