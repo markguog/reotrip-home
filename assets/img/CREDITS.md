@@ -24,6 +24,7 @@ These files are the photographs shipped on the homepage. Neither license require
 | shanghaiqinvr-card.jpg | 800×458 | 71966 | 随该商品存的图片 | — | 随该商品存的图片 | 2026-11-13T01:21:04Z | 7ab74425add01b0148be853e00d1d36e65b8bc5a7ed2af18e905e70dfb3e9720 |
 | shanghai-jinmao-tower.jpg | 720×480 | 218039 | 随该商品提供的官方图片 | — | 随该商品提供的官方图片 | 2026-11-13T01:18:44Z | 965214b09603b39d496ea3105de5afe8122db0305e252a8484a275642113eadd |
 | shuiguan-card.jpg | 800×442 | 111510 | 随该商品存的图片 | — | 随该商品存的图片 | 2026-11-13T01:21:04Z | d507316502f9f4d2274cb939a90a593ee5ac10fa97fc8d20a9c9768c2830198e |
+| osakacastle-card.jpg | 800×480 | 100066 | 随该商品存的图片 | — | 随该商品存的图片 | 2026-11-13T01:15:56Z | 4a47a1a1ca861ac4e43b9eddae099577d81fc1c96eaf3eab016257ca0c2c5377 |
 | legendaryjapan-card.jpg | 800×533 | 106802 | 随该商品由接口提供的图片 | — | 随该商品由接口提供的图片 | 2026-11-12T12:21:35Z | c16b8c198cfaa96370b3ee3be4eec50259ccf5de1208cea0ffcdb647c3fb504c |
 
 License text read on the source pages:
@@ -83,6 +84,10 @@ Original, not shipped:
 Added 2026-11-13 for the Shuiguan card.
 
 - shuiguan-card.jpg is that product's own picture. 随该商品存的图片. Alt text: Shuiguan Great Wall, Beijing. The file was copied as given. It was not resized. SHA256 above is of the shipped JPEG.
+
+Added 2026-11-13 for the Osaka Castle card. Source: reo-ops `_cowork/codex_artifacts/REOTRIP-SHOP-IMAGES-2-20261113T011556Z/osakacastle-card.jpg`.
+
+- osakacastle-card.jpg is that product's own picture. 随该商品存的图片. Alt text: Osaka Castle. The shipped file is the JPEG from that package, 800×480, 100066 bytes. The original is 1800×1080. It was not enlarged. SHA256 above is of the shipped JPEG. The castle, surrounding park and city context are clearly visible. No text poster, person close-up or added watermark is visible.
 
 Added 2026-11-12 for seven direct tickets. Each file below is an official image supplied with that product. The page column is the file id in the product's page facts. The author is not a person's name. The SHA256 column is the JPEG in this directory. The source SHA256 is the official file named by that file id, checked against the download.
 
