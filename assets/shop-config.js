@@ -703,6 +703,57 @@ window.REOTRIP_SHOP = {
         "The boarding point is confirmed by email from order@reotrip.com before the visit."
       ],
       paymentLink: "https://buy.stripe.com/7sYbJ274i2Ji32rgCjgfu0l"
+    },
+    jinmaotower: {
+      name: "Jin Mao Tower Observation Deck Ticket",
+      path: "en/china/shanghai-jin-mao-tower-observation-deck-ticket-p247/",
+      location: "Shanghai, China",
+      priceLabel: "HKD 145.30",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 145.30" }],
+      cancellation: "The ticket is non-refundable and carries a 100% cancellation charge.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-02",
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The booking confirmation is not the admission ticket. The official e-ticket is sent separately before the visit. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Use the official e-ticket to enter. The ticket is valid for the selected visit date. There is no start-time choice."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "The booking confirmation is not the admission ticket. The official e-ticket is sent separately before the visit. Check your spam folder. A payment receipt and our order confirmation email are not entry documents.",
+        "Use the official e-ticket to enter. The ticket is valid for the selected visit date. There is no start-time choice."
+      ],
+      paymentLink: "https://buy.stripe.com/aFafZi0FU4RqbyX3Pxgfu0s"
+    },
+    shuiguan: {
+      name: "Beijing Shuiguan Great Wall Admission Ticket",
+      path: "en/china/shuiguan-great-wall-admission/",
+      location: "Beijing, China",
+      priceLabel: "HKD 48.86",
+      tickets: [{ code: "adult", label: "Adult", priceLabel: "HKD 48.86" }],
+      cancellation: "Email order@reotrip.com at least 24 hours before the visit (Beijing time) to cancel and receive a full refund. If you write with less than 24 hours before the visit, the booking is not refunded.",
+      payment: "The cards and wallets shown on the payment page are the ones you can use.",
+      timeZone: "Asia/Shanghai",
+      minDaysAhead: 5,
+      bookableDays: 60,
+      lastDate: "2027-11-12",
+      closedWeekdays: ["Monday"],
+      reviewNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails the QR code voucher. Check your spam folder. A payment receipt and our order confirmation email are not the QR code voucher.",
+        "Enter with the QR code voucher. If the entrance cannot read the QR code, go to the staffed counter with the voucher and your passport.",
+        "This admission is valid on the visit date you select. Mondays are not available for this ticket."
+      ],
+      confirmedNextSteps: [
+        "After payment, we confirm your order by email.",
+        "order@reotrip.com emails the QR code voucher. Check your spam folder. A payment receipt and our order confirmation email are not the QR code voucher.",
+        "Enter with the QR code voucher. If the entrance cannot read the QR code, go to the staffed counter with the voucher and your passport.",
+        "This admission is valid on the visit date you select. Mondays are not available for this ticket."
+      ],
+      paymentLink: "https://buy.stripe.com/00wfZi60e83C32r99Rgfu0t"
     }
   }
 };
