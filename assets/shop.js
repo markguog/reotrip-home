@@ -132,21 +132,6 @@
     return match ? Number(match[1]) : Infinity;
   }
 
-  function lowestTierLabel(item) {
-    var tiers = datePriceTiers(item);
-    if (!tiers) return "";
-    var best = "";
-    var bestAmount = Infinity;
-    for (var i = 0; i < tiers.length; i += 1) {
-      var amount = priceAmount(tiers[i].priceLabel);
-      if (amount < bestAmount) {
-        bestAmount = amount;
-        best = tiers[i].priceLabel || "";
-      }
-    }
-    return best;
-  }
-
   function tierHasSelectableDay(item, tier) {
     if (!tier || !PAYMENT_LINK.test(tier.paymentLink || "")) return false;
     var range = dateWindow(item);
@@ -294,7 +279,7 @@
     function paintVisitPrice() {
       if (!datePriceTiers(item)) return;
       var tier = validDate(item, date.value) ? tierForDate(item, date.value) : null;
-      var shown = tier ? tier.priceLabel : ("From " + lowestTierLabel(item));
+      var shown = tier ? tier.priceLabel : ("From " + lowestOpenTierLabel(item));
       var lede = document.querySelector("p.shop-lede");
       if (lede) lede.textContent = shown;
       var terms = document.querySelectorAll("dt");
